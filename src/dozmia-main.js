@@ -5,13 +5,24 @@ this.dozmia = {};
 
   dozmia.u = _;
 
+  dozmia.u.ajax = Backbone.ajax;
+
   dozmia.MainRouter = Backbone.Router.extend({
     routes: {
-      "": "home"
+      "(/)": "home",
+      ":page(/)": "otherPage"
     },
     home: function () {
       var view = new dozmia.HomeView({
         el: "#dozmia-container"
+      });
+      view.render();
+    },
+    otherPage: function (pageName) {
+      var view;
+      view = new dozmia.MasterView({
+        el: "#dozmia-container",
+        showPage: pageName
       });
       view.render();
     }

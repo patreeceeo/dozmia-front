@@ -1,9 +1,16 @@
 <?php
 
 ob_start();
-if (@$_GET['page'] == 'test') {
+switch(@$_GET['page'])
+{
+case 'test':
   include "pages/test.php";
   echo ob_get_clean();
+  break;
+default:
+  echo "Error: The page ".@$_GET['page']." doesn't exist";
+  echo ob_get_clean();
+  break;
 }
 ob_end_clean();
 ?>

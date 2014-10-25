@@ -15,11 +15,16 @@
   <script type="text/javascript" src="lib/masonry.pkgd.js"></script>
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
+  <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
 </head>
 <body>
   <div id="dozmia-container">
   </div>
+  <script id="master-template" type="text/x-handlebars-template">
+    <div id="page-container">
+    </div>
+  </script>
 </body>
 </html>
 
