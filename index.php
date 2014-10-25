@@ -47,7 +47,10 @@
       </div>
     </div>
     <div class="dozmia-layout-fixed-bottom">Player</div>
-    <div class="dozmia-layout-fixed-right">Ad</div>
+    <div class="dozmia-layout-fixed-right dozmia-advert">
+      <h1>Ahh, no ads!</h1>
+      <p>Aren't you lucky?</p>
+    </div>
     <div class="dozmia-layout-page-content dozmia-page-content">
       <div id="page-container"></div>
     </div>
