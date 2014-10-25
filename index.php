@@ -5,6 +5,7 @@
   <title>Dozmia</title>
 
   <link rel="stylesheet" href="lib/reset.css">
+  <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
@@ -40,7 +41,11 @@
         </ul>
       </div>
     </div>
-    <div class="dozmia-layout-fixed-top">Search</div>
+    <div class="dozmia-layout-fixed-top dozmia-search-bar">
+      <div>
+        <input class="u-pull-right" type="text" placeholder="Search an artist...">
+      </div>
+    </div>
     <div class="dozmia-layout-fixed-bottom">Player</div>
     <div class="dozmia-layout-fixed-right">Ad</div>
     <div class="dozmia-layout-page-content dozmia-page-content">
