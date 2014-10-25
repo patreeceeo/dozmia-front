@@ -2,12 +2,13 @@
   "use strict";
 
   dozmia.HomeView = dozmia.BaseView.extend({
-    template: "home",
+    html: function () {
+      return "<div class=\"dozmia-album-art-wall\">"+this._generateRandomArtMarkup()+"</div>";
+    },
     afterRender: function () {
       var msnry, $artWall;
       $artWall = this.$(".dozmia-album-art-wall");
 
-      $artWall.html(this._generateRandomArtMarkup());
       msnry = new Masonry($artWall[0], {
         columnWidth: 50,
         itemSelector: ".dozmia-album-art"

@@ -20,10 +20,6 @@
 <body>
   <div id="dozmia-container">
   </div>
-  <script id="home-template" type="text/x-handlebars-template">
-    <div class="dozmia-album-art-wall">
-    </div>
-  </script>
 </body>
 </html>
 
