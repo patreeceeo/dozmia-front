@@ -1,0 +1,19 @@
+
+
+.dozmia-album-art {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 50px;
+  background-color: gray;
+}
+
+.dozmia-album-art.size-double {
+  height: 100px;
+  width: 100px;
+}
+
+.dozmia-album-art-wall {
+  position: relative;
+  left: -50px;
+  width: 120%;
+}
