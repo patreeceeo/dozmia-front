@@ -1,4 +1,12 @@
+html {
+  max-width: 100%;
+  overflow: hidden;
+}
 
+body {
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+}
 
 .dozmia-album-art {
   outline: 1px solid rgba(0, 0, 0, 0.5);
@@ -17,3 +25,43 @@
   left: -50px;
   width: 120%;
 }
+
+.dozmia-layout-left-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: auto;
+}
+
+.dozmia-layout-top-fixed {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: 100%;
+  height: 50px;
+}
+
+.dozmia-layout-bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.dozmia-layout-right-fixed {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  width: 200px;
+  height: auto;
+}
+
+.dozmia-layout-page-content {
+  margin: 70px 0 0 250px;
+  padding-right: 450px;
+  position: relative;
+  width: 100%;
+}
+

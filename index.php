@@ -22,7 +22,12 @@
   <div id="dozmia-container">
   </div>
   <script id="master-template" type="text/x-handlebars-template">
-    <div id="page-container">
+    <div class="dozmia-layout-left-fixed">Dozmia</div>
+    <div class="dozmia-layout-top-fixed">Search</div>
+    <div class="dozmia-layout-bottom-fixed">Player</div>
+    <div class="dozmia-layout-right-fixed">Ad</div>
+    <div class="dozmia-layout-page-content">
+      <div id="page-container"></div>
     </div>
   </script>
 </body>
