@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="lib/reset.css">
   <link rel="stylesheet" href="src/dozmia.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="lib/underscore.js"></script>
@@ -22,11 +23,27 @@
   <div id="dozmia-container">
   </div>
   <script id="master-template" type="text/x-handlebars-template">
-    <div class="dozmia-layout-left-fixed">Dozmia</div>
-    <div class="dozmia-layout-top-fixed">Search</div>
-    <div class="dozmia-layout-bottom-fixed">Player</div>
-    <div class="dozmia-layout-right-fixed">Ad</div>
-    <div class="dozmia-layout-page-content">
+    <div class="dozmia-layout-fixed-left dozmia-music-drawer">
+      <div class="dozmia-music-drawer-section">
+        <h1 class="dozmia-prefix-logo"><img src="/dozmia/assets/icon-dozmia-temp.gif"> Dozmia</h1>
+        <h2>Collection</h2>
+        <ul>
+          <li class="dozmia-music-drawer-item"><i></i><span>Songs</span></li>
+        </ul>
+      </div>
+      <div class="dozmia-music-drawer-section">
+        <h2>Playlists</h2>
+        <ul>
+          <li class="dozmia-music-drawer-item"><i></i><span>Rock 'n Roll</span></li>
+          <li class="dozmia-music-drawer-item"><i></i><span>Everything</span></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><i></i><span>Electronica</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dozmia-layout-fixed-top">Search</div>
+    <div class="dozmia-layout-fixed-bottom">Player</div>
+    <div class="dozmia-layout-fixed-right">Ad</div>
+    <div class="dozmia-layout-page-content dozmia-page-content">
       <div id="page-container"></div>
     </div>
   </script>
