@@ -109,7 +109,7 @@ body {
 }
 .dozmia-music-drawer-section h1, 
 .dozmia-music-drawer-section h2,
-.dozmia-music-drawer-item span {
+.dozmia-music-drawer-item a {
   padding: 0 20px 0 20px;
 }
 .dozmia-music-drawer-item {
@@ -119,6 +119,11 @@ body {
 }
 .dozmia-music-drawer-item i {
   display: none;
+}
+.dozmia-music-drawer-item a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 .dozmia-music-drawer-item--selected {
   background-color: rgb(117, 117, 117);

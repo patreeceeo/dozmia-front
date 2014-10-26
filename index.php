@@ -26,18 +26,18 @@
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
-        <h1 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif">Dozmia</h1>
+        <h1 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h1>
         <h2>Collection</h2>
         <ul>
-          <li class="dozmia-music-drawer-item"><i></i><span>Songs</span></li>
+          <li class="dozmia-music-drawer-item"><i></i><a href="#">Songs</a></li>
         </ul>
       </nav>
       <nav class="dozmia-music-drawer-section">
         <h2>Playlists</h2>
         <ul>
-          <li class="dozmia-music-drawer-item"><i></i><span>Rock 'n Roll</span></li>
-          <li class="dozmia-music-drawer-item"><i></i><span>Everything</span></li>
-          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><i></i><span>Electronica</span></li>
+          <li class="dozmia-music-drawer-item"><i></i><a href="#">Rock 'n Roll</a></li>
+          <li class="dozmia-music-drawer-item"><i></i><a href="#">Everything</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><i></i><a href="#">Electronica</a></li>
         </ul>
       </nav>
     </div>
