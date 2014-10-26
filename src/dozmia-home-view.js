@@ -10,7 +10,7 @@
       $artWall = this.$(".dozmia-album-art-wall");
 
       msnry = new Masonry($artWall[0], {
-        columnWidth: 50,
+        columnWidth: 45,
         itemSelector: ".dozmia-album-art"
       });
     },
@@ -21,9 +21,9 @@
         if(size === 0) {
           return "<div class=\"dozmia-album-art\"></div>";
         } else {
-          return "<div class=\"dozmia-album-art size-double\"></div>";
+          return "<div class=\"dozmia-album-art dozmia-album-art--half\"></div>";
         }
-      });
+      }).join("");
     }
   });
 

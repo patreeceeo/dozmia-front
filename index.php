@@ -25,31 +25,48 @@
   </div>
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
-      <div class="dozmia-music-drawer-section">
-        <h1 class="dozmia-prefix-logo"><img src="/dozmia/assets/icon-dozmia-temp.gif"> Dozmia</h1>
+      <nav class="dozmia-music-drawer-section">
+        <h1 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif">Dozmia</h1>
         <h2>Collection</h2>
         <ul>
           <li class="dozmia-music-drawer-item"><i></i><span>Songs</span></li>
         </ul>
-      </div>
-      <div class="dozmia-music-drawer-section">
+      </nav>
+      <nav class="dozmia-music-drawer-section">
         <h2>Playlists</h2>
         <ul>
           <li class="dozmia-music-drawer-item"><i></i><span>Rock 'n Roll</span></li>
           <li class="dozmia-music-drawer-item"><i></i><span>Everything</span></li>
           <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><i></i><span>Electronica</span></li>
         </ul>
-      </div>
+      </nav>
     </div>
     <div class="dozmia-layout-fixed-top dozmia-search-bar">
-      <div>
-        <input class="u-pull-right" type="text" placeholder="Search an artist...">
-      </div>
+      <form>
+        <input class="u-pull-right u-normalize" type="text" placeholder="Search an artist...">
+      </form>
     </div>
-    <div class="dozmia-layout-fixed-bottom">Player</div>
+    <div class="dozmia-layout-fixed-bottom dozmia-player">
+      <div class="dozmia-album-art dozmia-album-art--dark u-pull-left"></div>
+      <menu class="dozmia-player-buttons u-pull-left">
+        <button class="dozmia-control-rewind u-normalize u-pull-left"></button>
+        <button class="dozmia-control-play u-normalize u-pull-left"></button>
+        <button class="dozmia-control-fastforward u-normalize u-pull-left"></button>
+      </menu>
+      <section class="dozmia-layout-fixed-bottom-center dozmia-player-song-info">
+        <div class="u-cf">
+          <h1 class="u-pull-left">Two More Minutes - Jaymes McFarland</h1>
+          <div class="dozmia-timer u-pull-right">
+            <span class="dozmia-timer-elapsed">3:40</span><span class="dozmia-timer-total">6:30</span>
+          </div>
+        </div>
+        <input type="range" class="dozmia-control-slider u-normalize u-parent-width">
+      </section>
+      <div class="dozmia-control-volume u-pull-right"></div>
+    </div>
     <div class="dozmia-layout-fixed-right dozmia-advert">
-      <h1>Ahh, no ads!</h1>
-      <p>Aren't you lucky?</p>
+      <h1>Ahh, no ads?</h1>
+      <p>Aren't you lucky!</p>
     </div>
     <div class="dozmia-layout-page-content dozmia-page-content">
       <div id="page-container"></div>

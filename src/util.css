@@ -1,3 +1,101 @@
+
+.u-pull-left {
+  float: left !important;
+}
 .u-pull-right {
-  float: right;
+  float: right !important;
+}
+
+input.u-normalize,
+select.u-normalize, 
+button.u-normalize,
+textarea.u-normalize,
+input.u-normalize:hover,
+select.u-normalize:hover, 
+button.u-normalize:hover,
+textarea.u-normalize:hover,
+input.u-normalize:active,
+select.u-normalize:active, 
+button.u-normalize:active,
+textarea.u-normalize:active,
+input.u-normalize:focus,
+select.u-normalize:focus, 
+button.u-normalize:focus,
+textarea.u-normalize:focus {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  /* prevent the blue halo in webkit */
+  outline: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin: 0;
+}
+input[type="range"].u-normalize::-moz-range-track {
+  -moz-appearance: none !important;
+  outline: none;
+  border: none;
+}
+input[type="range"].u-normalize::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
+}
+input[type="range"].u-normalize::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.u-cf:before,
+.u-cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.u-cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.u-cf {
+    *zoom: 1;
+}
+
+.u-flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.u-flex--center-items {
+  -webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.u-parent-width {
+  display: block;
+  clear: both;
+  width: 100%;
 }

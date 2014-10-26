@@ -14,15 +14,20 @@ body {
 }
 
 .dozmia-album-art {
-  outline: 1px solid rgba(0, 0, 0, 0.5);
-  height: 50px;
-  width: 50px;
-  background-color: gray;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 90px;
+  width: 90px;
 }
 
-.dozmia-album-art.size-double {
-  height: 100px;
-  width: 100px;
+.dozmia-album-art--dark {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dozmia-album-art.dozmia-album-art--half {
+  height: 45px;
+  width: 45px;
 }
 
 .dozmia-album-art-wall {
@@ -57,8 +62,14 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   z-index: 3;
+}
+
+.dozmia-layout-fixed-bottom-center {
+  position: absolute;
+  left: 270px;
+  right: 140px;
 }
 
 .dozmia-layout-fixed-right {
@@ -73,7 +84,7 @@ body {
 
 .dozmia-layout-page-content {
   position: relative;
-  margin: 70px 0 0 250px;
+  margin: 70px 0 90px 250px;
   padding-right: 450px;
   width: 100%;
   overflow-x: hidden;
@@ -128,10 +139,6 @@ body {
   border-bottom: 1px solid rgb(117, 117, 117);
 }
 .dozmia-search-bar input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  /* prevent the blue halo in webkit */
-  outline: none;
   height: 40px;
   margin: 11px 10px 11px 10px;
   border: 2px solid rgb(165, 165, 165);
@@ -154,6 +161,7 @@ body {
 .dozmia-advert {
   background-color: rgb(255, 255, 255);
   color: rgb(165, 165, 165);
+  border-left: 1px solid rgb(117, 117, 117);
 }
 
 .dozmia-page-content {
@@ -161,7 +169,70 @@ body {
   color: rgb(117, 117, 117);
 }
 
+/* .dozmia-prefix-logo { */
+/*   display: flex; */
+/*   align-items: center; */
+/* } */
 .dozmia-prefix-logo img {
+  margin-right: 5px;
+}
+
+.dozmia-player {
+  background-color: rgb(255, 255, 255);
+  color: rgb(145, 145, 145);
+  border-top: 1px solid rgb(117, 117, 117);
+}
+.dozmia-player--translucent {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dozmia-player-buttons {
+  height: 100%;
+}
+
+button.dozmia-control-rewind,
+button.dozmia-control-play,
+button.dozmia-control-fastforward {
   position: relative;
-  top: 6px;
+  width: 60px;
+  height: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dozmia-control-volume {
+  width: 140px;
+  height: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"].dozmia-control-slider {
+  background-color: rgba(82, 194, 223, 0.5);
+  height: 7px;
+  border-radius: 7px;
+  background-image: url("/dozmia/assets/bg-control-slider.gif");
+  background-position: 0 0;
+  background-size: 64%;
+  background-repeat: no-repeat;
+  margin: 21px 0;
+}
+input[type="range"].dozmia-control-slider::-moz-range-track {
+  background-color: rgba(82, 194, 223, 0.1);
+  height: 7px;
+  border-radius: 7px;
+}
+input[type="range"].dozmia-control-slider::-webkit-slider-thumb {
+  background-color: rgb(184, 184, 184);
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+}
+input[type="range"].dozmia-control-slider::-moz-range-thumb {
+  background-color: rgb(184, 184, 184);
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.dozmia-timer-elapsed + .dozmia-timer-total:before {
+  content: " | ";
 }
