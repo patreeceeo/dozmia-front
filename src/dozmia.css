@@ -172,11 +172,7 @@ button.dozmia-button {
   padding-left: 15px;
 }
 
-.dozmia-search-bar {
-  background-color: white;
-  border-bottom: 1px solid rgb(117, 117, 117);
-}
-.dozmia-search-bar input {
+input[type="search"] {
   height: 40px;
   margin: 11px 10px 11px 10px;
   border: 2px solid rgb(165, 165, 165);
@@ -188,13 +184,17 @@ button.dozmia-button {
   font-family: Montserrat;
   text-indent: 20px;
   font-style: italic;
-  /* line-height: 20px; */
   color: rgb(117, 117, 117);
 }
-.dozmia-search-bar input::-webkit-input-placeholder,
-.dozmia-search-bar input:-moz-placeholder, /* Firefox 18- */
-.dozmia-search-bar input::-moz-placeholder,  /* Firefox 19+ */
-.dozmia-search-bar input:-ms-input-placeholder {  
+
+.dozmia-top-bar {
+  background-color: white;
+  border-bottom: 1px solid rgb(117, 117, 117);
+}
+.dozmia-top-bar input::-webkit-input-placeholder,
+.dozmia-top-bar input:-moz-placeholder, /* Firefox 18- */
+.dozmia-top-bar input::-moz-placeholder,  /* Firefox 19+ */
+.dozmia-top-bar input:-ms-input-placeholder {  
   color: rgb(165, 165, 165);
 }
 

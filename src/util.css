@@ -20,6 +20,12 @@ textarea.u-normalize {
   margin: 0;
   color: inherit;
 }
+input[type="search"].u-normalize::-webkit-search-decoration,
+input[type="search"].u-normalize::-webkit-search-cancel-button,
+input[type="search"].u-normalize::-webkit-search-results-button,
+input[type="search"].u-normalize::-webkit-search-results-decoration {
+  display: none;
+}
 input[type="range"].u-normalize::-moz-range-track {
   -moz-appearance: none !important;
   outline: none;

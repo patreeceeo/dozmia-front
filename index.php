@@ -42,9 +42,9 @@
         </ul>
       </nav>
     </div>
-    <div class="dozmia-layout-fixed-top dozmia-search-bar">
+    <div class="dozmia-layout-fixed-top dozmia-top-bar">
       <form>
-        <input class="u-pull-right u-normalize" type="text" placeholder="Search an artist...">
+        <input class="u-pull-right u-normalize" type="search" placeholder="Search an artist...">
       </form>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">
