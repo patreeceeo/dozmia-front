@@ -46,5 +46,5 @@
   <!--     <label for="input-female"><input class="u-normalize" type="radio" name="sex" id="input-female">F</label> -->
   <!--   </span> -->
   <!-- </fieldset> -->
-  <p><input class="dozmia-button dozmia-button--hallow u-normalize" type="submit" value="Save Changes"></p>
+  <p><input class="dozmia-button dozmia-button--hollow u-normalize" type="submit" value="Save Changes"></p>
 </form>

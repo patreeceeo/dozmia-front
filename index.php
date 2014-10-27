@@ -43,12 +43,12 @@
       </nav>
     </div>
     <div class="dozmia-layout-fixed-top dozmia-top-shelf">
-      <nav class="dozmia-search u-pull-right">
+      <nav class="dozmia-search u-pull-right u-gutter-small">
         <input class="u-normalize" type="search" placeholder="Search an artist...">
       </nav>
       <nav class="u-pull-right">
-        <a class="dozmia-button dozmia-button--hallow u-inline-block">SIGN UP</a>
-        <a class="dozmia-button dozmia-button--hallow u-inline-block">LOGIN</a>
+        <a class="dozmia-button dozmia-button--hollow u-pull-left u-gutter-small">SIGN UP</a>
+        <a class="dozmia-button dozmia-button--hollow u-pull-left u-gutter-small">LOGIN</a>
       </nav>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">

@@ -19,6 +19,7 @@ textarea.u-normalize {
   background: transparent;
   margin: 0;
   color: inherit;
+  box-sizing: border-box;
 }
 input[type="search"].u-normalize::-webkit-search-decoration,
 input[type="search"].u-normalize::-webkit-search-cancel-button,
@@ -115,3 +116,9 @@ input[type="range"].u-normalize::-moz-range-thumb {
   overflow: hidden;
   white-space: nowrap;
 }
+
+.u-gutter-small {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+

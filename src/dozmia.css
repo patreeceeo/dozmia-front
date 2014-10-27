@@ -43,7 +43,6 @@ input[type="search"] {
   text-indent: 20px;
   font-style: italic;
   color: rgb(117, 117, 117);
-  box-sizing: border-box;
 }
 
 input[type="button"].dozmia-button,
@@ -63,7 +62,7 @@ a.dozmia-button {
   width: auto;
   text-align: center;
 }
-.dozmia-button.dozmia-button--hallow {
+.dozmia-button.dozmia-button--hollow {
   background: rgb(255, 255, 255) !important;
   color: rgb(66, 189, 220) !important;
 }
@@ -201,7 +200,7 @@ a.dozmia-button {
   width: 120px;
 }
 .dozmia-top-shelf nav {
-  margin: 17px 10px 17px 10px;
+  margin: 17px 0;
 }
 .dozmia-top-shelf nav.dozmia-search {
   width: 40%;
