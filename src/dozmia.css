@@ -28,9 +28,27 @@ p {
   margin: 0 15px 30px 15px;
 }
 
+input::-webkit-input-placeholder,
+input:-moz-placeholder, /* Firefox 18- */
+input::-moz-placeholder,  /* Firefox 19+ */
+input:-ms-input-placeholder {  
+  color: rgb(165, 165, 165);
+}
+input[type="search"] {
+  height: 36px;
+  border: 2px solid rgb(165, 165, 165);
+  border-radius: 40px;
+  font-size: 20px;
+  font-family: Montserrat;
+  text-indent: 20px;
+  font-style: italic;
+  color: rgb(117, 117, 117);
+}
+
 input[type="button"].dozmia-button,
 input[type="submit"].dozmia-button,
-button.dozmia-button {
+button.dozmia-button,
+a.dozmia-button {
   height: 36px;
   border: 2px solid rgb(66, 189, 220);
   border-radius: 40px;
@@ -172,30 +190,17 @@ button.dozmia-button {
   padding-left: 15px;
 }
 
-input[type="search"] {
-  height: 40px;
-  margin: 11px 10px 11px 10px;
-  border: 2px solid rgb(165, 165, 165);
-  border-radius: 40px;
-  max-width: 400px;
-  width: 100%;
-  min-width: 200px;
-  font-size: 20px;
-  font-family: Montserrat;
-  text-indent: 20px;
-  font-style: italic;
-  color: rgb(117, 117, 117);
-}
-
 .dozmia-top-bar {
   background-color: white;
   border-bottom: 1px solid rgb(117, 117, 117);
 }
-.dozmia-top-bar input::-webkit-input-placeholder,
-.dozmia-top-bar input:-moz-placeholder, /* Firefox 18- */
-.dozmia-top-bar input::-moz-placeholder,  /* Firefox 19+ */
-.dozmia-top-bar input:-ms-input-placeholder {  
-  color: rgb(165, 165, 165);
+.dozmia-top-bar nav {
+  margin: 11px 10px 11px 10px;
+}
+.dozmia-top-bar input[type="search"] {
+  max-width: 400px;
+  width: 100%;
+  min-width: 100px;
 }
 
 .dozmia-advert {

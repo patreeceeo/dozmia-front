@@ -43,9 +43,13 @@
       </nav>
     </div>
     <div class="dozmia-layout-fixed-top dozmia-top-bar">
-      <form>
-        <input class="u-pull-right u-normalize" type="search" placeholder="Search an artist...">
-      </form>
+      <nav class="u-pull-right">
+        <input class="u-normalize" type="search" placeholder="Search an artist...">
+      </nav>
+      <nav class="u-pull-right">
+        <a class="dozmia-button dozmia-button--hallow u-inline-block">SIGN UP</a>
+        <a class="dozmia-button dozmia-button--hallow u-inline-block">LOGIN</a>
+      </nav>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">
       <a href="#" class="dozmia-album-art dozmia-album-art--dark u-pull-left"></a>
@@ -56,7 +60,7 @@
       </menu>
       <div class="dozmia-layout-fixed-bottom-center">
         <div class="u-cf dozmia-player-song-info">
-          <h1 class="u-pull-left">Two More Minutes - Jaymes McFarland</h1>
+          <h1 class="u-pull-left u-parent-width u-text-no-wrap">Two More Minutes - Jaymes McFarland</h1>
           <div class="dozmia-timer u-pull-right">
             <span class="dozmia-timer-elapsed">3:40</span><span class="dozmia-timer-total">6:30</span>
           </div>

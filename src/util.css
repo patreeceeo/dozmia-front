@@ -109,3 +109,9 @@ input[type="range"].u-normalize::-moz-range-thumb {
 .u-inline-block {
   display: inline-block;
 }
+
+.u-text-no-wrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
