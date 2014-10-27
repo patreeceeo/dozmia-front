@@ -1,4 +1,4 @@
-<section>
+<section class="dozmia-playlist">
 <h2>Rock 'n Roll</h2>
 <table class="dozmia-song-list js-data-table">
   <thead>

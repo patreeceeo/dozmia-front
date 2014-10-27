@@ -6,6 +6,18 @@
   float: right !important;
 }
 
+.u-full-height {
+  height: 100%;
+}
+
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+.u-overflow-scroll {
+  overflow: scroll;
+}
+
 input.u-normalize,
 select.u-normalize, 
 button.u-normalize,
@@ -82,12 +94,21 @@ input[type="range"].u-normalize::-moz-range-thumb {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
-
 .u-flex--center-items {
   -webkit-align-items: center;
 	-moz-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
+}
+.u-flex--center-items-x {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .u-parent-width {

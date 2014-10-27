@@ -23,7 +23,7 @@
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
 </head>
 <body>
-  <div id="dozmia-container">
+  <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
@@ -77,7 +77,7 @@
       <p>Aren't you lucky!</p>
     </div>
     <div class="dozmia-layout-page-content dozmia-page-content">
-      <div id="page-container"></div>
+      <div id="page-container" class="u-full-height u-overflow-scroll"></div>
     </div>
   </script>
 </body>
