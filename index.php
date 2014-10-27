@@ -28,14 +28,14 @@
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
-        <h1 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h1>
-        <h2>Collection</h2>
+        <h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h5>
+        <h6>Collection</h6>
         <ul>
           <li class="dozmia-music-drawer-item"><i></i><a href="#">Songs</a></li>
         </ul>
       </nav>
       <nav class="dozmia-music-drawer-section">
-        <h2>Playlists</h2>
+        <h6>Playlists</h6>
         <ul>
           <li class="dozmia-music-drawer-item"><a href="#">Rock 'n Roll</a></li>
           <li class="dozmia-music-drawer-item"><a href="#">Everything</a></li>

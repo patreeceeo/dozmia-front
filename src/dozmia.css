@@ -24,6 +24,14 @@ h1 {
   margin: 30px 15px;
 }
 
+h2 {
+  font-weight: bold;
+  border-bottom: 1px solid rgb(145, 145, 145);
+  margin: 0;
+  padding: 20px 15px 10px 15px;
+  font-size: 35px;
+}
+
 p {
   margin: 0 15px 30px 15px;
 }
@@ -157,13 +165,13 @@ a.dozmia-button {
   background-color: rgb(45, 45, 45);
 }
 /* TODO: should this actually be an H1? */
-.dozmia-music-drawer h1 {
+.dozmia-music-drawer h5 {
   text-transform: uppercase;
   font-size: 18px;
   height: 30px;
   margin: 0 0 40px 0;
 }
-.dozmia-music-drawer h2 {
+.dozmia-music-drawer h6 {
   text-transform: uppercase;
   font-size: 15px;
 }
@@ -175,8 +183,8 @@ a.dozmia-button {
   border-top: 1px solid rgb(91, 91, 91);
 }
 /* TODO: should this actually be an H1, H2? */
-.dozmia-music-drawer-section h1, 
-.dozmia-music-drawer-section h2,
+.dozmia-music-drawer-section h5, 
+.dozmia-music-drawer-section h6,
 .dozmia-music-drawer-item a {
   padding: 0 20px 0 20px;
 }

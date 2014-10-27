@@ -15,6 +15,10 @@ case 'collection':
   include "pages/collection.php";
   echo ob_get_clean();
   break;
+case 'playlist':
+  include "pages/playlist.php";
+  echo ob_get_clean();
+  break;
 default:
   echo "Error: The page ".@$_GET['page']." doesn't exist";
   echo ob_get_clean();
