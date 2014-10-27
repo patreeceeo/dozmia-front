@@ -48,7 +48,7 @@
       </form>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">
-      <div class="dozmia-album-art dozmia-album-art--dark u-pull-left"></div>
+      <a href="#" class="dozmia-album-art dozmia-album-art--dark u-pull-left"></a>
       <menu class="dozmia-player-buttons u-pull-left">
         <button class="dozmia-control-rewind u-normalize u-pull-left"></button>
         <button class="dozmia-control-play u-normalize u-pull-left"></button>
