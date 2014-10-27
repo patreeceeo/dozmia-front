@@ -3,34 +3,27 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-echo "Test";
+$root = $_SERVER['DOCUMENT_ROOT']."/dozmia";
 
-ob_start();
 switch(@$_GET['page'])
 {
 case 'test':
-  include "pages/test.php";
-  echo ob_get_clean();
+  include $root."/pages/test.php";
   break;
 case 'account-settings':
-  include "pages/account-settings.php";
-  echo ob_get_clean();
+  include $root."/pages/account-settings.php";
   break;
 case 'collection':
-  include "pages/collection.php";
-  echo ob_get_clean();
+  include $root."/pages/collection.php";
   break;
 case 'playlist':
-  include "pages/playlist.php";
-  echo ob_get_clean();
+  include $root."/pages/playlist.php";
   break;
 case 'playlist-empty':
-  include "pages/playlist-empty.php";
-  echo ob_get_clean();
+  include $root."/pages/playlist-empty.php";
   break;
 default:
   echo "Error: The page ".@$_GET['page']." doesn't exist";
   break;
 }
-ob_end_clean();
 ?>
