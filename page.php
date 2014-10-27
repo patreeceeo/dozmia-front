@@ -3,6 +3,8 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
+echo "Test";
+
 ob_start();
 switch(@$_GET['page'])
 {
@@ -28,7 +30,6 @@ case 'playlist-empty':
   break;
 default:
   echo "Error: The page ".@$_GET['page']." doesn't exist";
-  echo ob_get_clean();
   break;
 }
 ob_end_clean();
