@@ -9,19 +9,7 @@
 input.u-normalize,
 select.u-normalize, 
 button.u-normalize,
-textarea.u-normalize,
-input.u-normalize:hover,
-select.u-normalize:hover, 
-button.u-normalize:hover,
-textarea.u-normalize:hover,
-input.u-normalize:active,
-select.u-normalize:active, 
-button.u-normalize:active,
-textarea.u-normalize:active,
-input.u-normalize:focus,
-select.u-normalize:focus, 
-button.u-normalize:focus,
-textarea.u-normalize:focus {
+textarea.u-normalize {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   /* prevent the blue halo in webkit */
@@ -30,6 +18,7 @@ textarea.u-normalize:focus {
   padding: 0;
   background: transparent;
   margin: 0;
+  color: inherit;
 }
 input[type="range"].u-normalize::-moz-range-track {
   -moz-appearance: none !important;
@@ -98,4 +87,15 @@ input[type="range"].u-normalize::-moz-range-thumb {
   display: block;
   clear: both;
   width: 100%;
+}
+
+.u-invisible {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  width: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
 }

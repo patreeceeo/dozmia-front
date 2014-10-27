@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="lib/underscore.js"></script>
@@ -35,9 +36,9 @@
       <nav class="dozmia-music-drawer-section">
         <h2>Playlists</h2>
         <ul>
-          <li class="dozmia-music-drawer-item"><i></i><a href="#">Rock 'n Roll</a></li>
-          <li class="dozmia-music-drawer-item"><i></i><a href="#">Everything</a></li>
-          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><i></i><a href="#">Electronica</a></li>
+          <li class="dozmia-music-drawer-item"><a href="#">Rock 'n Roll</a></li>
+          <li class="dozmia-music-drawer-item"><a href="#">Everything</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><a href="#">Electronica</a></li>
         </ul>
       </nav>
     </div>
@@ -53,15 +54,15 @@
         <button class="dozmia-control-play u-normalize u-pull-left"></button>
         <button class="dozmia-control-fastforward u-normalize u-pull-left"></button>
       </menu>
-      <section class="dozmia-layout-fixed-bottom-center dozmia-player-song-info">
-        <div class="u-cf">
+      <div class="dozmia-layout-fixed-bottom-center">
+        <div class="u-cf dozmia-player-song-info">
           <h1 class="u-pull-left">Two More Minutes - Jaymes McFarland</h1>
           <div class="dozmia-timer u-pull-right">
             <span class="dozmia-timer-elapsed">3:40</span><span class="dozmia-timer-total">6:30</span>
           </div>
         </div>
         <input type="range" class="dozmia-control-slider u-normalize u-parent-width">
-      </section>
+      </div>
       <div class="dozmia-control-volume u-pull-right"></div>
     </div>
     <div class="dozmia-layout-fixed-right dozmia-advert">
