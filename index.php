@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="lib/reset.css">
   <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
+  <!-- TODO: serve fonts locally and/or convert w/ fontsquirrel -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic' rel='stylesheet' type='text/css'>
 
