@@ -28,18 +28,18 @@
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
-        <h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h5>
+        <a href="#"><h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h5></a>
         <h6>Collection</h6>
         <ul>
-          <li class="dozmia-music-drawer-item"><i></i><a href="#">Songs</a></li>
+          <li class="dozmia-music-drawer-item"><i></i><a href="#collection">Songs</a></li>
         </ul>
       </nav>
       <nav class="dozmia-music-drawer-section">
         <h6>Playlists</h6>
         <ul>
-          <li class="dozmia-music-drawer-item"><a href="#">Rock 'n Roll</a></li>
-          <li class="dozmia-music-drawer-item"><a href="#">Everything</a></li>
-          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><a href="#">Electronica</a></li>
+          <li class="dozmia-music-drawer-item"><a href="#playlist">Rock 'n Roll</a></li>
+          <li class="dozmia-music-drawer-item"><a href="#playlist-empty">Everything</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><a href="#playlist-empty">Electronica</a></li>
         </ul>
       </nav>
     </div>
@@ -72,6 +72,7 @@
         <input type="range" class="dozmia-control-slider u-normalize u-inline-block">
       </div>
     </div>
+    <!-- TODO use flex layout with page content + advert? -->
     <div class="dozmia-layout-fixed-right dozmia-advert">
       <h1>Ahh, no ads?</h1>
       <p>Aren't you lucky!</p>
