@@ -61,6 +61,7 @@ a.dozmia-button {
   cursor: pointer;
   font-size: 13px;
   width: auto;
+  text-align: center;
 }
 .dozmia-button.dozmia-button--hallow {
   background: rgb(255, 255, 255) !important;
@@ -192,18 +193,21 @@ a.dozmia-button {
   padding-left: 15px;
 }
 
-.dozmia-top-bar {
+.dozmia-top-shelf {
   background-color: white;
   border-bottom: 1px solid rgb(117, 117, 117);
 }
-.dozmia-top-bar nav {
+.dozmia-top-shelf .dozmia-button {
+  width: 120px;
+}
+.dozmia-top-shelf nav {
   margin: 17px 10px 17px 10px;
 }
-.dozmia-top-bar nav.dozmia-search {
+.dozmia-top-shelf nav.dozmia-search {
   width: 40%;
   min-width: 150px;
 }
-.dozmia-top-bar input[type="search"] {
+.dozmia-top-shelf input[type="search"] {
   width: 100%;
   min-width: 150px;
 }
