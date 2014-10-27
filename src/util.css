@@ -99,3 +99,7 @@ input[type="range"].u-normalize::-moz-range-thumb {
   padding: 0; 
   border: 0; 
 }
+
+.u-inline-block {
+  display: inline-block;
+}

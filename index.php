@@ -63,7 +63,9 @@
         </div>
         <input type="range" class="dozmia-control-slider u-normalize u-parent-width">
       </div>
-      <div class="dozmia-control-volume u-pull-right"></div>
+      <div class="dozmia-control-volume u-pull-right u-flex u-flex--center-items">
+        <input type="range" class="dozmia-control-slider u-normalize u-inline-block">
+      </div>
     </div>
     <div class="dozmia-layout-fixed-right dozmia-advert">
       <h1>Ahh, no ads?</h1>
