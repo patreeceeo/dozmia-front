@@ -16,6 +16,7 @@
   <script type="text/javascript" src="lib/handlebars-v2.0.0.js"></script>
   <!-- For album art layout on home page -->
   <script type="text/javascript" src="lib/masonry.pkgd.js"></script>
+  <script type="text/javascript" src="lib/jquery.dataTables.js"></script>
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
