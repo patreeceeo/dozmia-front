@@ -43,7 +43,7 @@
       </nav>
     </div>
     <div class="dozmia-layout-fixed-top dozmia-top-bar">
-      <nav class="u-pull-right">
+      <nav class="dozmia-search u-pull-right">
         <input class="u-normalize" type="search" placeholder="Search an artist...">
       </nav>
       <nav class="u-pull-right">
