@@ -24,6 +24,7 @@
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-login-view.js"></script> 
 </head>
 <body>
   <div id="modal-container" class="modal-background u-flex u-flex--center-items u-flex--center-items-x u-full-height">
@@ -54,7 +55,7 @@
       </nav>
       <nav class="u-pull-right">
         <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small js-sign-up">SIGN UP</button>
-        <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small">LOGIN</button>
+        <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small js-login">LOGIN</button>
       </nav>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">
@@ -114,8 +115,25 @@
             </select>
           </label>
         </p>
-        <p class="u-flex u-flex--fill-x">
+        <p class="u-flex u-flex--fill-x u-margin-chunky-top">
           <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
+        </p>
+      </form>
+    </section>
+  </script>
+  <script id="login-template" type="text/x-handlebars-template">
+    <section>
+      <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>OR</span></h3>
+      <form>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Username" title="Username" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
+        </p>
+        <p class="u-flex u-flex--center-items-x u-margin-chunky-top">
+          <button class="dozmia-button dozmia-button--big-text dozmia-button--hollow u-normalize" title="submit">login</button>
         </p>
       </form>
     </section>

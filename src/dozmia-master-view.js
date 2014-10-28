@@ -8,6 +8,11 @@
         if(!/modal=/.test(window.location.href)) {
           window.location.href += "?modal=sign-up";
         }
+      },
+      "click button.js-login": function () {
+        if(!/modal=/.test(window.location.href)) {
+          window.location.href += "?modal=login";
+        }
       }
     },
     showPage: function (pageName) {

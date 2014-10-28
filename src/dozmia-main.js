@@ -7,6 +7,14 @@ this.dozmia = {};
 
   dozmia.u.ajax = Backbone.ajax;
 
+  dozmia.log = {
+    error: function () {
+      var args = Array.prototype.slice.call(arguments);
+      window.console.error.apply(window.console, args);
+      throw new Error(args.join(" "));
+    }
+  };
+
   dozmia.ResourceManager = function (opts) {
     this.factory = opts.factory;
     this.resources = {};
@@ -45,7 +53,7 @@ this.dozmia = {};
   dozmia.MainRouter = Backbone.Router.extend({
     routes: {
       "(/)": "home",
-      ":page?modal=sign-up": "signUp",
+      ":page?modal=:modal": "modalOverlay",
       ":page(/)": "otherPage"
     },
     home: function () {
@@ -54,11 +62,28 @@ this.dozmia = {};
       });
       view.render();
     },
-    signUp: function (pageName) {
+    modalOverlay: function (pageName, modalName) {
+      var ContentView, modalView;
+
+      switch(modalName) {
+        case "sign-up":
+          ContentView = dozmia.SignUpView;
+          break;
+        case "login":
+          ContentView = dozmia.LoginView;
+          break;
+      }
+
       dozmia.rman.request("master-view").showPage(pageName);
-      dozmia.rman.request("modal-view")
-        .assignChild(new dozmia.SignUpView(), "#modal-content-container")
-        .$el.show();
+      modalView = dozmia.rman.request("modal-view");
+
+      if(ContentView == null) {
+        dozmia.log.error("The requested modal does not exist.");
+      } else {
+        modalView.assignChild(new ContentView(), "#modal-content-container");
+      }
+
+      modalView.$el.show();
     },
     otherPage: function (pageName) {
       dozmia.rman.request("master-view").showPage(pageName);
