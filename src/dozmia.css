@@ -191,10 +191,12 @@ a.dozmia-button {
   display: block;
 }
 .dozmia-album-art article {
-  font-size: 16px;
+  font-size: 13px;
   position: absolute;
   z-index: 2;
   bottom: 0;
+  line-height: 20px;
+  margin: 10px;
 }
 .dozmia-album-art h6 {
   font-size: 20px;
@@ -204,6 +206,15 @@ a.dozmia-button {
   height: 100%;
   position: absolute;
   z-index: 1;
+}
+.dozmia-album-art.dozmia-album-art--half h6 {
+  font-size: 14px;
+  line-height: 15px;
+}
+.dozmia-album-art.dozmia-album-art--half article {
+  font-size: 9px;
+  line-height: 15px;
+  margin: 5px;
 }
 
 .dozmia-layout-fixed-left {
