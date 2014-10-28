@@ -27,14 +27,20 @@ this.dozmia = {};
 
   dozmia.rman = new dozmia.ResourceManager({
     factory: {
+      "home-view": function () {
+        var view = new dozmia.HomeView({
+          el: "#dozmia-container",
+          children: {
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView()
+          }
+        });
+        return view;
+      },
       "master-view": function () {
         var view;
         view = new dozmia.MasterView({
           el: "#dozmia-container"
         });
-        if(view.$el.children().length === 0) {
-          view.render();
-        }
         return view;
       },
       "modal-view": function () {
@@ -42,9 +48,6 @@ this.dozmia = {};
         view = new dozmia.ModalView({
           el: "#modal-container"
         });
-        if(view.$el.children().length === 0) {
-          view.render();
-        }
         return view;
       }
     }
@@ -57,10 +60,7 @@ this.dozmia = {};
       ":page(/)": "otherPage"
     },
     home: function () {
-      var view = new dozmia.AlbumArtWallView({
-        el: "#dozmia-container"
-      });
-      view.render();
+      dozmia.rman.request("home-view").render();
     },
     modalOverlay: function (pageName, modalName) {
       var ContentView, modalView;
@@ -75,7 +75,7 @@ this.dozmia = {};
       }
 
       dozmia.rman.request("master-view").showPage(pageName);
-      modalView = dozmia.rman.request("modal-view");
+      modalView = dozmia.rman.request("modal-view").render();
 
       if(ContentView == null) {
         dozmia.log.error("The requested modal does not exist.");
@@ -86,12 +86,16 @@ this.dozmia = {};
       modalView.$el.show();
     },
     otherPage: function (pageName) {
-      dozmia.rman.request("master-view").showPage(pageName);
+      dozmia.rman.request("master-view").render().showPage(pageName);
       dozmia.rman.request("modal-view").$el.hide();
     }
   });
 
   dozmia.BaseView = Backbone.View.extend({
+    initialize: function (options) {
+      options = options || {};
+      this.children = options.children || {}; 
+    },
     render: function () {
       this.$el.html(this.html());
       _.each(this.children, this.assignChild, this);
@@ -106,9 +110,13 @@ this.dozmia = {};
       return template();
     },
     assignChild: function (view, selector) {
+      // NOTE: if the app is going to be regularly adding and removing views to the DOM
+      // you may want to help prevent memory leaks by cleaning up the resources of child
+      // views when a view is removed.
       view.setElement(this.$(selector)).render();
+      this.children[selector] = this.children[selector] || view;
       return this;
-    },
+    }
   });
 
   $(function () {

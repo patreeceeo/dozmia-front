@@ -21,6 +21,7 @@
   <script type="text/javascript" src="lib/jquery.dataTables.js"></script>
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
+  <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-album-art-wall-view.js"></script> 
@@ -32,6 +33,10 @@
   </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
+  <script id="home-template" type="text/x-handlebars-template">
+    <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
+    </div>
+  </script>
   <script id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
