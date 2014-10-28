@@ -60,6 +60,7 @@ this.dozmia = {};
       ":page(/)": "otherPage"
     },
     home: function () {
+      dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-view").render();
     },
     modalOverlay: function (pageName, modalName) {

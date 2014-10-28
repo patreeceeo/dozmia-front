@@ -181,6 +181,21 @@ a.dozmia-button {
   height: 45px;
   width: 45px;
 }
+.dozmia-album-art div {
+  display: none;
+}
+.dozmia-album-art a {
+  font-size: 20px;
+}
+.dozmia-album-art:hover div {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .dozmia-layout-fixed-left {
   position: fixed;

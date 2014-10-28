@@ -8,6 +8,11 @@
       this.nTiles = 40;
       this.tileWidth = Math.sqrt((this.totalWidth * this.totalHeight) / this.nTiles) / 1.5;
     },
+    events: {
+      "click .js-album": function () {
+         
+      }
+    },
     html: function () {
       return "<div class=\"dozmia-album-art-wall\">"+this._generateRandomArtMarkup()+"</div>";
     },
@@ -28,6 +33,13 @@
         columnWidth: this.tileWidth,
         itemSelector: ".dozmia-album-art"
       });
+
+      this.$(".js-album").each(function () {
+        $(this).append("<div class=\"u-flex u-flex--center-items u-flex--center-items-x\">"+
+                       "<article><h6><a href=\"#album-details\">Premiere Ballade</a></h6>"+
+                       "<aside>by<br><a href=\"#artist-details\">Chopin</a></aside></article>"+
+                       "</div>");
+      });
     },
     _generateRandomArtMarkup: function () {
       var layout = dozmia.u.random(1);
@@ -35,11 +47,11 @@
         var size;
         size = (index + layout) % 2;
         if(size === 0) {
-          return "<div class=\"dozmia-album-art\"></div>";
+          return "<div class=\"dozmia-album-art js-album\"></div>";
         } else {
-          return "<div class=\"dozmia-album-art dozmia-album-art--half\"></div>"+
-                 "<div class=\"dozmia-album-art dozmia-album-art--half\"></div>"+
-                 "<div class=\"dozmia-album-art dozmia-album-art--half\"></div>";
+          return "<div class=\"dozmia-album-art dozmia-album-art--half js-album\"></div>"+
+                 "<div class=\"dozmia-album-art dozmia-album-art--half js-album\"></div>"+
+                 "<div class=\"dozmia-album-art dozmia-album-art--half js-album\"></div>";
         }
       }).join("");
     }
