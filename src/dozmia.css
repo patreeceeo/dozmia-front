@@ -56,6 +56,10 @@ p {
   margin: 0 15px 30px 15px;
 }
 
+form p {
+  margin-bottom: 5px;
+}
+
 button, 
 a, 
 input[type="button"],
@@ -74,10 +78,34 @@ input[type="search"] {
   border: 2px solid rgb(165, 165, 165);
   border-radius: 40px;
   font-size: 13px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-indent: 20px;
   font-style: italic;
   color: rgb(117, 117, 117);
+}
+
+input.dozmia-input {
+  height: 36px;
+  font-size: 17px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 40px;
+  text-indent: 20px;
+}
+select.dozmia-input {
+  height: 36px;
+  font-size: 17px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(117, 117, 117);
+  padding: 0 10px;
+  cursor: text;
+}
+input.dozmia-input:focus,
+select.dozmia-input:focus {
+  box-shadow: 0 0 6px rgb(66, 189, 220) !important;
 }
 
 input[type="button"].dozmia-button,
@@ -118,6 +146,13 @@ a.dozmia-button {
   display: block;
   position: absolute;
   left: 0;
+}
+.dozmia-button.dozmia-button--facebook span:after {
+  content: "f";
+}
+.dozmia-button.dozmia-button--big-text {
+  font-size: 17px;
+  text-transform: uppercase;
 }
 
 .dozmia-album-art-wall {
@@ -373,6 +408,11 @@ input[type="range"].dozmia-control-slider::-moz-range-thumb {
   font-size: 25px;
   height: 50px;
   font-family: 'Source Sans Pro';
+  min-width: 150px;
+}
+.dozmia-account-settings input:focus, 
+.dozmia-account-settings select:focus {
+  box-shadow: 0 0 6px rgb(66, 189, 220) !important;
 }
 .dozmia-account-settings input {
   max-width: 400px;
@@ -450,6 +490,11 @@ section.dozmia-playlist .dozmia-playlist-plus {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   min-width: 450px;
 }
+.dozmia-modal section {
+  margin: 30px 0;
+  min-height: 30px;
+  text-align: center;
+}
 
 .color-red-text {
   color: rgb(117, 19, 19) !important;
@@ -458,7 +503,7 @@ section.dozmia-playlist .dozmia-playlist-plus {
   color: rgb(66, 189, 220) !important;
 }
 
-.modal-overlay {
+.modal-background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -467,8 +512,3 @@ section.dozmia-playlist .dozmia-playlist-plus {
   position: fixed;
 }
 
-.modal-overlay section {
-  margin: 30px 0;
-  min-height: 30px;
-  text-align: center;
-}

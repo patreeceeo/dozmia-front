@@ -32,7 +32,7 @@
   <!-- </fieldset> -->
   <p><label for="input-password">Zipcode:<input class="dozmia-account-settings-control u-pull-right u-normalize" id="input-zipcode" type="text" placeholder="90210" maxlength="8"></label></p>
   <p>
-    <label for="input-sex">Sex:
+    <label for="input-sex">Gender:
       <select class="dozmia-account-settings-control u-pull-right u-normalize" id="input-sex" dir="rtl" required>
         <option value="male">Male</option>
         <option value="female">Female</option>

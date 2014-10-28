@@ -110,6 +110,9 @@ input[type="range"].u-normalize::-moz-range-thumb {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.u-flex--fill-x > * {
+  flex-grow: 1;
+}
 
 .u-parent-width {
   display: block;

@@ -26,7 +26,7 @@
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
 </head>
 <body>
-  <div id="modal-container" class="modal-overlay u-flex u-flex--center-items u-flex--center-items-x u-full-height">
+  <div id="modal-container" class="modal-background u-flex u-flex--center-items u-flex--center-items-x u-full-height">
   </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
@@ -89,9 +89,36 @@
   <script id="sign-up-template" type="text/x-handlebars-template">
     <section>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
-      <button class="dozmia-button dozmia-button--facebook"><span>f</span>Facebook</button>
+      <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Or with your email</span></h3>
-    <section>
+      <form>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="First Name" title="First Name" required>
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Last Name" title="Last Name" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="email" placeholder="Email Address" title="Email Address" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Date of Birth" title="Date of Birth" required>
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Zip Code" title="Zip Code" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <label for="input-gender">I am:
+            <select class="dozmia-input u-normalize u-gutter-small" id="input-gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <button class="dozmia-button dozmia-button--big-text" title="submit">submit</button>
+        </p>
+      </form>
+    </section>
   </script>
 </body>
 </html>
