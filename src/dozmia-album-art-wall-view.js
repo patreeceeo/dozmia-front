@@ -1,7 +1,7 @@
 !(function (dozmia, Masonry) {
   "use strict";
 
-  dozmia.HomeView = dozmia.BaseView.extend({
+  dozmia.AlbumArtWallView = dozmia.BaseView.extend({
     initialize: function () {
       this.totalWidth = window.screen.width || 1920;
       this.totalHeight = window.screen.height || 1080;

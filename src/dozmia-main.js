@@ -57,7 +57,7 @@ this.dozmia = {};
       ":page(/)": "otherPage"
     },
     home: function () {
-      var view = new dozmia.HomeView({
+      var view = new dozmia.AlbumArtWallView({
         el: "#dozmia-container"
       });
       view.render();

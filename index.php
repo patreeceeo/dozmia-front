@@ -23,7 +23,7 @@
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
-  <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-album-art-wall-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-login-view.js"></script> 
 </head>
