@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
   <!-- TODO: serve fonts locally and/or convert w/ fontsquirrel -->
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+  <!-- link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" -->
+  <!-- link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic' rel='stylesheet' type='text/css' -->
 
   <script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="lib/underscore.js"></script>
