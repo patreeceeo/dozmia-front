@@ -35,10 +35,9 @@
       });
 
       this.$(".js-album").each(function () {
-        $(this).append("<div class=\"u-flex u-flex--center-items u-flex--center-items-x\">"+
-                       "<article><h6><a href=\"#album-details\">Premiere Ballade</a></h6>"+
-                       "<aside>by<br><a href=\"#artist-details\">Chopin</a></aside></article>"+
-                       "</div>");
+        $(this).append("<div><article><h6><a href=\"#album-details\">Premiere Ballade</a></h6>"+
+                       "<aside><a href=\"#artist-details\">Chopin</a></aside></article>"+
+                       "<button class=\"u-normalize js-play-album\">&gt;</button></div>");
       });
     },
     _generateRandomArtMarkup: function () {
