@@ -50,7 +50,7 @@
     </div>
     <div class="dozmia-layout-fixed-top dozmia-top-shelf">
       <nav class="dozmia-search u-pull-right u-gutter-small">
-        <input class="u-normalize" type="search" placeholder="Search an artist...">
+        <input class="dozmia-input u-normalize" type="search" placeholder="Search an artist...">
       </nav>
       <nav class="u-pull-right">
         <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small js-sign-up">SIGN UP</button>
@@ -115,7 +115,7 @@
           </label>
         </p>
         <p class="u-flex u-flex--fill-x">
-          <button class="dozmia-button dozmia-button--big-text" title="submit">submit</button>
+          <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
         </p>
       </form>
     </section>

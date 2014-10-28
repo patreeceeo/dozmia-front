@@ -73,26 +73,23 @@ input::-moz-placeholder,  /* Firefox 19+ */
 input:-ms-input-placeholder {  
   color: rgb(165, 165, 165);
 }
-input[type="search"] {
-  height: 36px;
-  border: 2px solid rgb(165, 165, 165);
-  border-radius: 40px;
-  font-size: 13px;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  text-indent: 20px;
-  font-style: italic;
-  color: rgb(117, 117, 117);
-}
 
 input.dozmia-input {
   height: 36px;
-  font-size: 17px;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  border-radius: 36px;
+  text-indent: 18px;
   color: rgb(117, 117, 117);
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
   border: 1px solid rgb(165, 165, 165);
-  border-radius: 40px;
-  text-indent: 20px;
+}
+input[type="search"].dozmia-input {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+  border: 2px solid rgb(165, 165, 165);
 }
 select.dozmia-input {
   height: 36px;
@@ -101,10 +98,11 @@ select.dozmia-input {
   font-weight: bold;
   color: rgb(117, 117, 117);
   padding: 0 10px;
-  cursor: text;
+  cursor: pointer;
 }
 input.dozmia-input:focus,
-select.dozmia-input:focus {
+select.dozmia-input:focus,
+.dozmia-button:focus {
   box-shadow: 0 0 6px rgb(66, 189, 220) !important;
 }
 

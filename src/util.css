@@ -136,9 +136,9 @@ input[type="range"].u-normalize::-moz-range-thumb {
 }
 
 .u-text-no-wrap {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
 }
 
 .u-gutter-small {
