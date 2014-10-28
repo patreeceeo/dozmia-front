@@ -21,9 +21,12 @@
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
 </head>
 <body>
+  <div id="dozmia-modal-container" class="modal-container u-full-height">
+  </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
   <script id="master-template" type="text/x-handlebars-template">
@@ -49,8 +52,8 @@
         <input class="u-normalize" type="search" placeholder="Search an artist...">
       </nav>
       <nav class="u-pull-right">
-        <a class="dozmia-button dozmia-button--hollow u-pull-left u-gutter-small">SIGN UP</a>
-        <a class="dozmia-button dozmia-button--hollow u-pull-left u-gutter-small">LOGIN</a>
+        <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small js-sign-up">SIGN UP</button>
+        <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small">LOGIN</button>
       </nav>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">

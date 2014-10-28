@@ -2,19 +2,23 @@
   "use strict";
 
   dozmia.MasterView = dozmia.BaseView.extend({
-    initialize: function (options) {
-      this.showPage = options.showPage; 
-    },
     template: "master",
-    afterRender: function () {
+    events: {
+      "click button.js-sign-up": function () {
+        if(!/\?/.test(window.location.href)) {
+          window.location.href += "?modal=sign-up";
+        }
+      }
+    },
+    showPage: function (pageName) {
       var self = this;
       dozmia.u.ajax({
         method: "GET",
-        url: "page.php?page="+this.showPage
+        url: "page.php?page="+pageName
       }).success(function (pageContent) {
         self.$("#page-container").html(pageContent);
       }).error(function () {
-        self.$("#page-container").html("Error: Couldn't fetch content for "+self.showPage);
+        self.$("#page-container").html("Error: Couldn't fetch content for "+self.pageName);
       });
     }
   });

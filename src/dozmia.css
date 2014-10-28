@@ -420,4 +420,14 @@ section.dozmia-playlist .dozmia-playlist-plus {
   color: rgb(66, 189, 220) !important;
 }
 
+.modal-container {
+  position: absolute;
+}
 
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+}
