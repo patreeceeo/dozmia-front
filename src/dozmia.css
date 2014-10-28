@@ -181,12 +181,6 @@ a.dozmia-button {
   width: 45px;
 }
 
-.dozmia-album-art-wall {
-  position: relative;
-  left: -50px;
-  width: 120%;
-}
-
 .dozmia-layout-fixed-left {
   position: fixed;
   overflow: hidden;
