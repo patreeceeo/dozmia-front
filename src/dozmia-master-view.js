@@ -5,7 +5,7 @@
     template: "master",
     events: {
       "click button.js-sign-up": function () {
-        if(!/\?/.test(window.location.href)) {
+        if(!/modal=/.test(window.location.href)) {
           window.location.href += "?modal=sign-up";
         }
       }

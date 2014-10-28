@@ -23,9 +23,10 @@
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
 </head>
 <body>
-  <div id="dozmia-modal-container" class="modal-container u-full-height">
+  <div id="modal-container" class="modal-overlay u-flex u-flex--center-items u-flex--center-items-x u-full-height">
   </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
@@ -84,6 +85,13 @@
     <div class="dozmia-layout-page-content dozmia-page-content">
       <div id="page-container" class="u-full-height u-overflow-scroll"></div>
     </div>
+  </script>
+  <script id="sign-up-template" type="text/x-handlebars-template">
+    <section>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
+      <button class="dozmia-button dozmia-button--facebook"><span>f</span>Facebook</button>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Or with your email</span></h3>
+    <section>
   </script>
 </body>
 </html>

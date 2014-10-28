@@ -35,6 +35,18 @@ h2 {
   font-size: 35px;
 }
 
+h3 {
+  overflow: visible;
+  height: 0px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  margin: 19px 15px;
+}
+
+h3 span {
+  background-color: white;
+  padding: 0 10px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -88,6 +100,24 @@ a.dozmia-button {
 .dozmia-button.dozmia-button--hollow {
   background: rgb(255, 255, 255) !important;
   color: rgb(66, 189, 220) !important;
+}
+.dozmia-button.dozmia-button--facebook {
+  background-color: rgb(76, 112, 170);
+  border-color: rgb(76, 112, 170);
+  position: relative;
+  padding: 0 32px 0 48px;
+}
+.dozmia-button.dozmia-button--facebook span {
+  width: 32px;
+  border-radius: 32px;
+  background-color: white;
+  color: rgb(76, 112, 170);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  left: 0;
 }
 
 .dozmia-album-art-wall {
@@ -230,7 +260,7 @@ a.dozmia-button {
   border-bottom: 1px solid rgb(117, 117, 117);
 }
 .dozmia-top-shelf .dozmia-button {
-  width: 120px;
+  width: 150px;
 }
 .dozmia-top-shelf nav {
   margin: 17px 0;
@@ -413,6 +443,14 @@ section.dozmia-playlist .dozmia-playlist-plus {
   border-bottom: 1px solid rgb(165, 165, 165);
 }
 
+.dozmia-modal {
+  border-radius: 15px;
+  background-color: white;
+  color: rgb(111, 111, 111);
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  min-width: 450px;
+}
+
 .color-red-text {
   color: rgb(117, 19, 19) !important;
 }
@@ -420,14 +458,17 @@ section.dozmia-playlist .dozmia-playlist-plus {
   color: rgb(66, 189, 220) !important;
 }
 
-.modal-container {
-  position: absolute;
-}
-
 .modal-overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.25);
   position: fixed;
+}
+
+.modal-overlay section {
+  margin: 30px 0;
+  min-height: 30px;
+  text-align: center;
 }

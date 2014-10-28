@@ -32,7 +32,7 @@ this.dozmia = {};
       "modal-view": function () {
         var view;
         view = new dozmia.ModalView({
-          el: "#dozmia-modal-container"
+          el: "#modal-container"
         });
         if(view.$el.children().length === 0) {
           view.render();
@@ -56,7 +56,9 @@ this.dozmia = {};
     },
     signUp: function (pageName) {
       dozmia.rman.request("master-view").showPage(pageName);
-      dozmia.rman.request("modal-view").$el.show();
+      dozmia.rman.request("modal-view")
+        .assignChild(new dozmia.SignUpView(), "#modal-content-container")
+        .$el.show();
     },
     otherPage: function (pageName) {
       dozmia.rman.request("master-view").showPage(pageName);
@@ -77,7 +79,11 @@ this.dozmia = {};
       var source = $("#"+this.template+"-template").html();
       var template = Handlebars.compile(source);
       return template();
-    }
+    },
+    assignChild: function (view, selector) {
+      view.setElement(this.$(selector)).render();
+      return this;
+    },
   });
 
   $(function () {
