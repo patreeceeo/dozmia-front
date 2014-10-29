@@ -35,7 +35,8 @@
       });
 
       this.$(".js-album").each(function () {
-        $(this).append("<div><article><h6><a href=\"#album-details\">Premiere Ballade</a></h6>"+
+        $(this).append("<div><article><h6 class=\"u-text-no-wrap\">"+
+                       "<a href=\"#album-details\">Premiere Ballade</a></h6>"+
                        "<aside><a href=\"#artist-details\">Chopin</a></aside></article>"+
                        "<button class=\"u-normalize js-play-album\">&gt;</button></div>");
       });

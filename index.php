@@ -33,11 +33,11 @@
   </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
   </div>
-  <script id="home-template" type="text/x-handlebars-template">
+  <template id="home-template" type="text/x-handlebars-template">
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
-  </script>
-  <script id="master-template" type="text/x-handlebars-template">
+  </template>
+  <template id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
         <a href="#"><h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h5></a>
@@ -65,7 +65,7 @@
       </nav>
     </div>
     <div class="dozmia-layout-fixed-bottom dozmia-player">
-      <a href="#" class="dozmia-album-art dozmia-album-art--dark u-pull-left"></a>
+      <a href="#" class="dozmia-album-art dozmia-album-art--dark dozmia-album-art--half u-pull-left"></a>
       <menu class="dozmia-player-buttons u-pull-left">
         <button class="dozmia-control-rewind u-normalize u-pull-left"></button>
         <button class="dozmia-control-play u-normalize u-pull-left"></button>
@@ -92,8 +92,8 @@
     <div class="dozmia-layout-page-content dozmia-page-content">
       <div id="page-container" class="u-full-height u-overflow-scroll"></div>
     </div>
-  </script>
-  <script id="sign-up-template" type="text/x-handlebars-template">
+  </template>
+  <template id="sign-up-template" type="text/x-handlebars-template">
     <section>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
       <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
@@ -126,8 +126,8 @@
         </p>
       </form>
     </section>
-  </script>
-  <script id="login-template" type="text/x-handlebars-template">
+  </template>
+  <template id="login-template" type="text/x-handlebars-template">
     <section>
       <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>OR</span></h3>
@@ -143,7 +143,8 @@
         </p>
       </form>
     </section>
-  </script>
+  </template>
+  <a class="u-invisible" href="http://papyrusoft.com/" title="thanks"> Dozmia ~ Thanks for building your front-end with Papyrus. Go forth and conquer! ~ Patrick</a>
 </body>
 </html>
 

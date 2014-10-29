@@ -22,6 +22,9 @@ case 'playlist':
 case 'playlist-empty':
   include $root."/pages/playlist-empty.php";
   break;
+case 'album-details':
+  include $root."/pages/album-details.php";
+  break;
 default:
   echo "Error: The page ".@$_GET['page']." doesn't exist";
   break;
