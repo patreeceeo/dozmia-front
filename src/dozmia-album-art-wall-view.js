@@ -42,7 +42,8 @@
       });
     },
     _generateRandomArtMarkup: function () {
-      var layout = dozmia.u.random(1);
+      // var layout = dozmia.u.random(1);
+      var layout = 1;
       return dozmia.u.times(this.nTiles, function (index) {
         var size;
         size = (index + layout) % 2;
