@@ -28,34 +28,12 @@ this.dozmia = {};
   dozmia.rman = new dozmia.ResourceManager({
     factory: {
       "home-view": function () {
-        var view = new dozmia.HomeView({
+        return new dozmia.HomeView({
           el: "#dozmia-container",
           children: {
-            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
-            "#dozmia-cta-container": new dozmia.SearchSignUpLoginView()
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView()
           }
         });
-        return view;
-      },
-      "home-sign-up-view": function () {
-        var view = new dozmia.HomeView({
-          el: "#dozmia-container",
-          children: {
-            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
-            "#dozmia-cta-container": new dozmia.HomeSignUpView()
-          }
-        });
-        return view;
-      },
-      "home-sign-up-thanks-view": function () {
-        var view = new dozmia.HomeView({
-          el: "#dozmia-container",
-          children: {
-            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
-            "#dozmia-cta-container": new dozmia.HomeSignUpThanksView()
-          }
-        });
-        return view;
       },
       "master-view": function () {
         var view;
@@ -85,15 +63,24 @@ this.dozmia = {};
     },
     home: function () {
       dozmia.rman.request("modal-view").$el.hide();
-      dozmia.rman.request("home-view").render();
+      dozmia.rman.request("home-view").transitionOut(function () {
+        this.assignChild(new dozmia.SearchSignUpLoginView(), "#dozmia-cta-container");
+        this.render();
+      });
     },
     homeSignUp: function () {
       dozmia.rman.request("modal-view").$el.hide();
-      dozmia.rman.request("home-sign-up-view").render();
+      dozmia.rman.request("home-view").transitionOut(function () {
+        this.assignChild(new dozmia.HomeSignUpView(), "#dozmia-cta-container");
+        this.render();
+      });
     },
     homeSignUpThanks: function () {
       dozmia.rman.request("modal-view").$el.hide();
-      dozmia.rman.request("home-sign-up-thanks-view").render();
+      dozmia.rman.request("home-view").transitionOut(function () {
+        this.assignChild(new dozmia.HomeSignUpThanksView(), "#dozmia-cta-container");
+        this.render();
+      });
     },
     modalOverlay: function (pageName, modalName) {
       var ContentView, modalView;
@@ -146,6 +133,10 @@ this.dozmia = {};
       // NOTE: if the app is going to be regularly adding and removing views to the DOM
       // you may want to help prevent memory leaks by cleaning up the resources of child
       // views when a view is removed.
+      if(this.children[selector] != null) {
+        this.children[selector].remove();
+        this.children[selector] = null;
+      }
       view.setElement(this.$(selector)).render();
       this.children[selector] = this.children[selector] || view;
       return this;

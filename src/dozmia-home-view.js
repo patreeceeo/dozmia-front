@@ -11,10 +11,16 @@
     transitionIn: function () {
       this.$(".dozmia-transition--scale")
         .removeClass("dozmia-transition-in");
+      return this;
     },
-    transitionOut: function () {
+    transitionOut: function (callback) {
+      var self = this;
       this.$(".dozmia-transition--scale")
         .addClass("dozmia-transition-out");
+      callback && setTimeout(function () {
+        callback.call(self);   
+      }, 500);
+      return this;
     }
   });
 })(this.dozmia);
