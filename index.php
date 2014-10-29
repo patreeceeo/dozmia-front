@@ -28,7 +28,7 @@
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-login-view.js"></script> 
 </head>
-<body>
+<body class="dozmia-cta-wrapper">
   <div id="modal-container" class="modal-background u-flex u-flex--center-items u-flex--center-items-x u-full-height">
   </div>
   <div id="dozmia-container" class="u-full-height u-overflow-hidden">
@@ -48,21 +48,23 @@
     </section>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta dozmia-cta--translucent dozmia-cta--wide">
-      <h1 class="u-text-blue">Dozmia</h1>
-      <menu class="u-gutter-fat u-text-center">
-        <div class="dozmia-complex-input u-margin-chunky-bottom">
-          <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
-          <div class="dozmia-complex-input-suffix">
-            <button class="dozmia-search-button u-normalize">-></button>
+    <div class="dozmia-sign-up-view">
+      <section class="dozmia-cta dozmia-cta--translucent dozmia-cta--wide">
+        <h1 class="u-text-blue">Dozmia</h1>
+        <menu class="u-gutter-fat u-text-center">
+          <div class="dozmia-complex-input u-margin-chunky-bottom">
+            <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
+            <div class="dozmia-complex-input-suffix">
+              <button class="dozmia-search-button u-normalize">-></button>
+            </div>
           </div>
-        </div>
-        <div class="u-margin-chunky-bottom">
-          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
-          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
-        </div>
-      </menu>
-    </section>
+          <div class="u-margin-chunky-bottom">
+            <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
+            <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
+          </div>
+        </menu>
+      </section>
+    </div>
   </template>
   <template id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
@@ -155,6 +157,7 @@
     </section>
   </template>
   <template id="home-sign-up-template" type="text/x-handlebars-template">
+    <div class="dozmia-cta-wrapper">
     <section class="dozmia-cta">
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
@@ -191,6 +194,7 @@
         </p>
       </form>
     </section>
+    </div>
   </template>
   <template id="login-template" type="text/x-handlebars-template">
     <section>
