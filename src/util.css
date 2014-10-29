@@ -141,6 +141,10 @@ input[type="range"].u-normalize::-moz-range-thumb {
   white-space: nowrap !important;
 }
 
+.u-text-center {
+  text-align: center;
+}
+
 .u-text-blue {
   color: rgb(66, 189, 220);
 }
@@ -149,12 +153,18 @@ input[type="range"].u-normalize::-moz-range-thumb {
   margin-left: 15px !important;
   margin-right: 15px !important;
 }
-
 .u-gutter-small {
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
+.u-gutter-fat {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
 
 .u-margin-chunky-top {
   margin-top: 15px;
+}
+.u-margin-chunky-bottom {
+  margin-bottom: 15px;
 }

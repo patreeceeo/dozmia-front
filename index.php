@@ -43,10 +43,16 @@
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
     <section class="dozmia-cta dozmia-cta--translucent">
       <h1 class="u-text-blue">Dozmia</h1>
-      <menu>
-        <div class="dozmia-input-complex">
+      <menu class="u-gutter-fat u-text-center">
+        <div class="dozmia-complex-input u-margin-chunky-bottom">
           <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
-          <button class="dozmia-button--go dozmia-input-complex-appendee u-normalize">
+          <div class="dozmia-complex-input-suffix">
+            <button class="dozmia-search-button u-normalize">-></button>
+          </div>
+        </div>
+        <div class="u-margin-chunky-bottom">
+          <button class="dozmia-button dozmia-button--big-text u-normalize">Sign Up</button>
+          <button class="dozmia-button dozmia-button--big-text u-normalize">Login</button>
         </div>
       </menu>
     </section>
