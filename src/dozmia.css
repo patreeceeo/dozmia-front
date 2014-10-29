@@ -126,6 +126,7 @@ input.dozmia-input {
   border-radius: 36px;
   text-indent: 18px;
   color: rgb(117, 117, 117);
+  background-color: rgb(255, 255, 255);
   font-family: source_sans_pro, Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -336,6 +337,27 @@ a.dozmia-button {
   overflow-x: hidden;
 }
 
+.dozmia-cta {
+  position: fixed;
+  z-index: 100;
+  top: 33%;
+  left: 14%;
+  height: 33%;
+  background-color: rgba(255,255,255);
+  width: 72%;
+  min-width: 400px;
+  min-height: 100px;
+}
+.dozmia-cta--translucent {
+  background-color: rgba(255,255,255,0.8);
+}
+.dozmia-cta h1 {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
 .dozmia-music-drawer {
   background-color: rgb(45, 45, 45);
 }
@@ -349,6 +371,7 @@ a.dozmia-button {
 .dozmia-music-drawer h6 {
   text-transform: uppercase;
   font-size: 15px;
+  margin: 0;
 }
 .dozmia-music-drawer-section {
   padding: 20px 0 20px 0;

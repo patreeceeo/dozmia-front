@@ -22,6 +22,7 @@
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-album-art-wall-view.js"></script> 
@@ -36,6 +37,19 @@
   <template id="home-template" type="text/x-handlebars-template">
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
+    <div id="dozmia-cta-container">
+    </div>
+  </template>
+  <template id="search-sign-up-login-template" type="text/x-handlebars-template">
+    <section class="dozmia-cta dozmia-cta--translucent">
+      <h1 class="u-text-blue">Dozmia</h1>
+      <menu>
+        <div class="dozmia-input-complex">
+          <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
+          <button class="dozmia-button--go dozmia-input-complex-appendee u-normalize">
+        </div>
+      </menu>
+    </section>
   </template>
   <template id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">

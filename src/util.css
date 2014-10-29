@@ -141,6 +141,10 @@ input[type="range"].u-normalize::-moz-range-thumb {
   white-space: nowrap !important;
 }
 
+.u-text-blue {
+  color: rgb(66, 189, 220);
+}
+
 .u-gutter {
   margin-left: 15px !important;
   margin-right: 15px !important;

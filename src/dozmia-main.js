@@ -31,7 +31,8 @@ this.dozmia = {};
         var view = new dozmia.HomeView({
           el: "#dozmia-container",
           children: {
-            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView()
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
+            "#dozmia-cta-container": new dozmia.SearchSignUpLoginView()
           }
         });
         return view;
