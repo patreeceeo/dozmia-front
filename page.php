@@ -28,6 +28,9 @@ case 'album-details':
 case 'artist-details':
   include $root."/pages/artist-details.php";
   break;
+case 'search-results':
+  include $root."/pages/search-results.php";
+  break;
 default:
   echo "Error: The page ".@$_GET['page']." doesn't exist";
   break;

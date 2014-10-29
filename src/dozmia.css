@@ -26,13 +26,19 @@ header, footer, article, section {
   margin: 0 auto;
 }
 
-figure {
-  margin: 30px 15px 20px 15px;
-}
 
 header {
   border-bottom: 2px solid rgb(127, 127, 127);
   margin: 0 0 15px 0;
+}
+
+header figure {
+  margin: 30px 15px 20px 15px;
+}
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
 }
 
 header h1 {
@@ -48,6 +54,10 @@ header menu {
 menuitem {
   display: block; 
   cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 15px;
 }
 
 h1 {
@@ -80,7 +90,6 @@ h4 {
   margin: 0 15px;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -92,6 +101,10 @@ p {
 
 form p {
   margin-bottom: 5px;
+}
+
+em {
+  font-style: italic;
 }
 
 button, 
@@ -229,6 +242,7 @@ a.dozmia-button {
 }
 .dozmia-album-art h6 {
   font-size: 20px;
+  margin: 0;
 }
 .dozmia-album-art button {
   width: 100%;
@@ -244,6 +258,16 @@ a.dozmia-button {
   font-size: 9px;
   line-height: 15px;
   padding: 5px;
+}
+
+.dozmia-album-list-item {
+  margin: 15px 0 15px 0;
+  padding: 30px 0 0 0;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+.dozmia-album-list-item:first-child {
+  padding: 0;
+  border: 0;
 }
 
 .dozmia-artist h1 {
@@ -575,6 +599,15 @@ section.dozmia-playlist .dozmia-playlist-plus {
   width: 150px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+.dozmia-grid-list {
+  margin: 15px 0;
+}
+
+.dozmia-grid-list li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .dozmia-modal {
