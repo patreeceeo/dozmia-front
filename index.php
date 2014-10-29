@@ -40,7 +40,7 @@
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta dozmia-cta--translucent u-flex u-flex--center-items dozmia-transition--scale dozmia-transition-init">
+    <section class="dozmia-cta u-flex u-flex--center-items dozmia-transition--scale dozmia-transition-init">
       <div>
         <h4>Thanks for registering early. We'll email you when its ready!</h4>
         <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
@@ -49,7 +49,7 @@
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
     <div class="dozmia-cta-wrapper">
-      <section class="dozmia-cta dozmia-cta--translucent dozmia-cta--wide dozmia-transition--scale dozmia-transition-init">
+      <section class="dozmia-cta dozmia-cta--wide dozmia-transition--scale dozmia-transition-init">
         <h1 class="u-text-blue">Dozmia</h1>
         <menu class="u-gutter-fat u-text-center">
           <div class="dozmia-complex-input u-margin-chunky-bottom">

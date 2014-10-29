@@ -384,7 +384,7 @@ button.dozmia-search-button {
 .dozmia-cta {
   position: absolute;
   z-index: 4;
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.8);
   top: 50%;
   left: 50%;
   margin-left: -175px;
@@ -400,7 +400,6 @@ button.dozmia-search-button {
   min-height: 200px;
 }
 .dozmia-cta--translucent {
-  background-color: rgba(255,255,255,0.8);
 }
 .dozmia-cta h1, h2, h3, h4, h5, h6, p {
   color: rgb(65, 65, 65);
@@ -785,7 +784,7 @@ section.dozmia-playlist .dozmia-playlist-plus {
 }
 
 .dozmia-transition--scale {
-  -webkit-transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 .dozmia-transition--scale.dozmia-transition-init {
