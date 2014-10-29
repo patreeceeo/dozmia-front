@@ -141,6 +141,11 @@ input[type="range"].u-normalize::-moz-range-thumb {
   white-space: nowrap !important;
 }
 
+.u-gutter {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
 .u-gutter-small {
   margin-left: 5px !important;
   margin-right: 5px !important;

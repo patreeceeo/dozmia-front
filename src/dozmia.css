@@ -32,6 +32,7 @@ figure {
 
 header {
   border-bottom: 2px solid rgb(127, 127, 127);
+  margin: 0 0 15px 0;
 }
 
 header h1 {
@@ -76,6 +77,7 @@ h3 span {
 
 h4 {
   font-size: 30px;
+  margin: 0 15px;
 }
 
 
@@ -196,6 +198,7 @@ a.dozmia-button {
   background-color: rgba(255, 255, 255, 0.15);
   height: 200px;
   width: 200px;
+  min-width: 200px;
 }
 .dozmia-album-art.dozmia-album-art--dark {
   outline: 1px solid rgba(0, 0, 0, 0.5);
@@ -204,6 +207,7 @@ a.dozmia-button {
 .dozmia-album-art.dozmia-album-art--half {
   height: 100px;
   width: 100px;
+  min-width: 100px;
 }
 .dozmia-album-art div {
   display: none;
@@ -240,6 +244,17 @@ a.dozmia-button {
   font-size: 9px;
   line-height: 15px;
   padding: 5px;
+}
+
+.dozmia-artist h1 {
+  line-height: 160px;
+}
+.dozmia-artist-photo {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 160px;
+  width: 160px;
+  min-width: 160px;
 }
 
 .dozmia-layout-fixed-left {
