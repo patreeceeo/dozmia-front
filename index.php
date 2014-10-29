@@ -36,11 +36,13 @@
   <template id="home-template" type="text/x-handlebars-template">
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
-    <div id="dozmia-cta-container">
+    <div>
+      <div id="dozmia-cta-container" class="dozmia-cta-wrapper dozmia-transition--scale dozmia-transition-in">
+      </div>
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta u-flex u-flex--center-items dozmia-transition--scale dozmia-transition-init">
+    <section class="dozmia-cta u-flex u-flex--center-items">
       <div>
         <h4>Thanks for registering early. We'll email you when its ready!</h4>
         <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
@@ -48,23 +50,21 @@
     </section>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
-    <div class="dozmia-cta-wrapper">
-      <section class="dozmia-cta dozmia-cta--wide dozmia-transition--scale dozmia-transition-init">
-        <h1 class="u-text-blue">Dozmia</h1>
-        <menu class="u-gutter-fat u-text-center">
-          <div class="dozmia-complex-input u-margin-chunky-bottom">
-            <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
-            <div class="dozmia-complex-input-suffix">
-              <button class="dozmia-search-button u-normalize">-></button>
-            </div>
+    <section class="dozmia-cta dozmia-cta--wide">
+      <h1 class="u-text-blue">Dozmia</h1>
+      <menu class="u-gutter-fat u-text-center">
+        <div class="dozmia-complex-input u-margin-chunky-bottom">
+          <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
+          <div class="dozmia-complex-input-suffix">
+            <button class="dozmia-search-button u-normalize">-></button>
           </div>
-          <div class="u-margin-chunky-bottom">
-            <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
-            <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
-          </div>
-        </menu>
-      </section>
-    </div>
+        </div>
+        <div class="u-margin-chunky-bottom">
+          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
+        </div>
+      </menu>
+    </section>
   </template>
   <template id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
@@ -157,8 +157,7 @@
     </section>
   </template>
   <template id="home-sign-up-template" type="text/x-handlebars-template">
-    <div class="dozmia-cta-wrapper">
-    <section class="dozmia-cta dozmia-transition--scale dozmia-transition-init">
+    <section class="dozmia-cta">
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
@@ -194,7 +193,6 @@
         </p>
       </form>
     </section>
-    </div>
   </template>
   <template id="login-template" type="text/x-handlebars-template">
     <section>
