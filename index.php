@@ -7,10 +7,7 @@
   <link rel="stylesheet" href="lib/reset.css">
   <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
-  <!-- TODO: serve fonts locally and/or convert w/ fontsquirrel -->
   <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-  <!-- link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" -->
-  <!-- link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic' rel='stylesheet' type='text/css' -->
 
   <script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="lib/underscore.js"></script>
@@ -23,6 +20,7 @@
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-home-sign-up-thanks-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
@@ -40,6 +38,14 @@
     </div>
     <div id="dozmia-cta-container">
     </div>
+  </template>
+  <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
+    <section class="dozmia-cta dozmia-cta--translucent u-flex u-flex--center-items">
+      <div>
+        <h4>Thanks for registering early. We'll email you when its ready!</h4>
+        <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
+      </div>
+    </section>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
     <section class="dozmia-cta dozmia-cta--translucent dozmia-cta--wide">
@@ -116,9 +122,9 @@
   </template>
   <template id="sign-up-template" type="text/x-handlebars-template">
     <section>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
       <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Or with your email</span></h3>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Or with your email</span><span></span></h3>
       <form>
         <p class="u-flex u-flex--fill-x">
           <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="First Name" title="First Name" required>
@@ -152,11 +158,11 @@
     <section class="dozmia-cta">
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
       <div class="u-text-center">
         <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
       </div>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Or with your email</span></h3>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Or with your email</span><span></span></h3>
       <form>
         <p class="u-flex u-flex--fill-x">
           <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="First Name" title="First Name" required>
@@ -181,7 +187,7 @@
           </label>
         </p>
         <p class="u-flex u-flex--fill-x u-margin-chunky-top u-margin-chunky-bottom">
-          <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" title="submit" href="#thanks">submit</a>
         </p>
       </form>
     </section>
@@ -189,7 +195,7 @@
   <template id="login-template" type="text/x-handlebars-template">
     <section>
       <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>OR</span></h3>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>
       <form>
         <p class="u-flex u-flex--fill-x">
           <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Username" title="Username" required>

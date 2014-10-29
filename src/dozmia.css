@@ -76,14 +76,17 @@ h2 {
 h3 {
   overflow: visible;
   height: 0px;
-  border-bottom: 1px solid rgb(226, 226, 226);
   margin: 19px 15px;
   color: rgb(0, 0, 0);
 }
-
 h3 span {
-  background-color: rgb(255, 255, 255);
+  background-color: inherit;
   padding: 0 10px;
+}
+h3 span:first-child,
+h3 span:last-child {
+  border-bottom: 1px solid rgb(165, 165, 165);
+  flex-grow: 1;
 }
 
 h4 {
@@ -367,23 +370,25 @@ button.dozmia-search-button {
 
 .dozmia-cta {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   background-color: rgb(255,255,255);
-  top: 15%;
+  top: 50%;
   left: 50%;
   margin-left: -175px;
+  margin-top: -250px;
   width: 400px;
+  min-height: 300px;
 }
 .dozmia-cta--wide {
   top: 33%;
   left: 50%;
-  margin-left: -400px;
-  width: 800px;
+  margin-left: -390px;
+  width: 780px;
 }
 .dozmia-cta--translucent {
   background-color: rgba(255,255,255,0.8);
 }
-.dozmia-cta h1, h2, h3, p {
+.dozmia-cta h1, h2, h3, h4, h5, h6, p {
   color: rgb(65, 65, 65);
 }
 .dozmia-cta h1 {
@@ -398,6 +403,12 @@ button.dozmia-search-button {
   font-size: 32px;
   text-align: center;
   border: 0;
+}
+.dozmia-cta h4 {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
 }
 
 .dozmia-music-drawer {

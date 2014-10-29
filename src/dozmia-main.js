@@ -47,6 +47,16 @@ this.dozmia = {};
         });
         return view;
       },
+      "home-sign-up-thanks-view": function () {
+        var view = new dozmia.HomeView({
+          el: "#dozmia-container",
+          children: {
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
+            "#dozmia-cta-container": new dozmia.HomeSignUpThanksView()
+          }
+        });
+        return view;
+      },
       "master-view": function () {
         var view;
         view = new dozmia.MasterView({
@@ -70,6 +80,7 @@ this.dozmia = {};
       ":page?modal=:modal": "modalOverlay",
       "home": "home",
       "signup": "homeSignUp",
+      "thanks": "homeSignUpThanks",
       ":page(/)": "otherPage"
     },
     home: function () {
@@ -79,6 +90,10 @@ this.dozmia = {};
     homeSignUp: function () {
       dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-sign-up-view").render();
+    },
+    homeSignUpThanks: function () {
+      dozmia.rman.request("modal-view").$el.hide();
+      dozmia.rman.request("home-sign-up-thanks-view").render();
     },
     modalOverlay: function (pageName, modalName) {
       var ContentView, modalView;
