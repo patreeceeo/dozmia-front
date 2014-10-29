@@ -78,10 +78,11 @@ h3 {
   height: 0px;
   border-bottom: 1px solid rgb(226, 226, 226);
   margin: 19px 15px;
+  color: rgb(0, 0, 0);
 }
 
 h3 span {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 0 10px;
 }
 
@@ -177,12 +178,13 @@ input[type="button"].dozmia-button,
 input[type="submit"].dozmia-button,
 button.dozmia-button,
 a.dozmia-button {
+  display: inline-block;
   height: 36px;
   line-height: 32px;
   border: 2px solid rgb(66, 189, 220);
   border-radius: 40px;
   background-color: rgb(66, 189, 220);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 30px 0 30px;
   font-family: montserrat;
   cursor: pointer;
@@ -204,7 +206,7 @@ a.dozmia-button {
   width: 32px;
   height: 32px;
   border-radius: 32px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: rgb(76, 112, 170);
   font-family: Helvetica;
   font-size: 20px;
@@ -365,21 +367,37 @@ button.dozmia-search-button {
 
 .dozmia-cta {
   position: fixed;
-  z-index: 100;
+  z-index: 1;
+  background-color: rgb(255,255,255);
+  top: 15%;
+  left: 50%;
+  margin-left: -175px;
+  width: 400px;
+}
+.dozmia-cta--wide {
   top: 33%;
-  left: 20%;
-  background-color: rgba(255,255,255);
-  width: 72%;
-  min-width: 400px;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
 }
 .dozmia-cta--translucent {
   background-color: rgba(255,255,255,0.8);
+}
+.dozmia-cta h1, h2, h3, p {
+  color: rgb(65, 65, 65);
 }
 .dozmia-cta h1 {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 60px;
   text-align: center;
+}
+.dozmia-cta h2 {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  border: 0;
 }
 
 .dozmia-music-drawer {

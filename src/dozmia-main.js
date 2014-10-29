@@ -22,7 +22,7 @@ this.dozmia = {};
 
   dozmia.ResourceManager.prototype.request = function (name) {
     var args = Array.prototype.slice.call(arguments, 1);
-    return this.resources[name] || (this.resources[name] = this.factory[name](args)); 
+    return this.resources[name] || (this.resources[name] = this.factory[name].apply(this, args)); 
   };
 
   dozmia.rman = new dozmia.ResourceManager({
@@ -33,6 +33,16 @@ this.dozmia = {};
           children: {
             "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
             "#dozmia-cta-container": new dozmia.SearchSignUpLoginView()
+          }
+        });
+        return view;
+      },
+      "home-sign-up-view": function () {
+        var view = new dozmia.HomeView({
+          el: "#dozmia-container",
+          children: {
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
+            "#dozmia-cta-container": new dozmia.HomeSignUpView()
           }
         });
         return view;
@@ -58,11 +68,17 @@ this.dozmia = {};
     routes: {
       "(/)": "home",
       ":page?modal=:modal": "modalOverlay",
+      "home": "home",
+      "signup": "homeSignUp",
       ":page(/)": "otherPage"
     },
     home: function () {
       dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-view").render();
+    },
+    homeSignUp: function () {
+      dozmia.rman.request("modal-view").$el.hide();
+      dozmia.rman.request("home-sign-up-view").render();
     },
     modalOverlay: function (pageName, modalName) {
       var ContentView, modalView;

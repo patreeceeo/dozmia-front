@@ -142,11 +142,11 @@ input[type="range"].u-normalize::-moz-range-thumb {
 }
 
 .u-text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-text-blue {
-  color: rgb(66, 189, 220);
+  color: rgb(66, 189, 220) !important;
 }
 
 .u-gutter {

@@ -22,6 +22,7 @@
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-home-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
@@ -41,7 +42,7 @@
     </div>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta dozmia-cta--translucent">
+    <section class="dozmia-cta dozmia-cta--translucent dozmia-cta--wide">
       <h1 class="u-text-blue">Dozmia</h1>
       <menu class="u-gutter-fat u-text-center">
         <div class="dozmia-complex-input u-margin-chunky-bottom">
@@ -51,8 +52,8 @@
           </div>
         </div>
         <div class="u-margin-chunky-bottom">
-          <button class="dozmia-button dozmia-button--big-text u-normalize">Sign Up</button>
-          <button class="dozmia-button dozmia-button--big-text u-normalize">Login</button>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
         </div>
       </menu>
     </section>
@@ -142,6 +143,44 @@
           </label>
         </p>
         <p class="u-flex u-flex--fill-x u-margin-chunky-top">
+          <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
+        </p>
+      </form>
+    </section>
+  </template>
+  <template id="home-sign-up-template" type="text/x-handlebars-template">
+    <section class="dozmia-cta">
+      <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
+      <p class="u-text-center">Free Music, Everwhere</p>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Sign up with</span></h3>
+      <div class="u-text-center">
+        <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
+      </div>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span>Or with your email</span></h3>
+      <form>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="First Name" title="First Name" required>
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Last Name" title="Last Name" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="email" placeholder="Email Address" title="Email Address" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Date of Birth" title="Date of Birth" required>
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Zip Code" title="Zip Code" required>
+        </p>
+        <p class="u-flex u-flex--center-items-x">
+          <label for="input-gender">I am:
+            <select class="dozmia-input u-normalize u-gutter-small" id="input-gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
+        </p>
+        <p class="u-flex u-flex--fill-x u-margin-chunky-top u-margin-chunky-bottom">
           <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
         </p>
       </form>
