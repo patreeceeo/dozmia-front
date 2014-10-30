@@ -11,11 +11,12 @@
 }
 
 .u-overflow-hidden {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .u-overflow-scroll {
-  overflow: scroll;
+  overflow-y: scroll !important;
+  overflow-y: hidden !important;
 }
 
 input.u-normalize,

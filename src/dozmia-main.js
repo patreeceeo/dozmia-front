@@ -172,6 +172,16 @@ this.dozmia = {};
     new dozmia.MainRouter();
 
     Backbone.history.start();
+
+    $(window).resize(function () {
+      $(".js-smart-scroll-object").each(function () {
+        if($(window).innerHeight() < $(this).height()) {
+          $("html").css("overflow-y", "scroll");
+        } else {
+          $("html").css("overflow-y", "hidden");
+        }
+      });
+    });
   });
 
 })(this.dozmia, this.Backbone, this.$, this._, this.Handlebars);

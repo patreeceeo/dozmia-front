@@ -31,15 +31,15 @@
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-login-view.js"></script> 
 </head>
-<body class="dozmia-cta-wrapper">
+<body class="dozmia-cta-min-height">
   <div id="modal-container" class="modal-background u-flex u-flex--center-items u-flex--center-items-x u-full-height">
   </div>
-  <div id="dozmia-container" class="u-full-height u-overflow-hidden">
+  <div id="dozmia-container" class="u-full-height u-overflow-hidden dozmia-cta-min-height">
   </div>
   <template id="home-template" type="text/x-handlebars-template">
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
-    <div>
+    <div class="u-overflow-hidden">
       <div id="dozmia-cta-container" class="dozmia-transition--scale dozmia-transition-in-start dozmia-transition-in">
       </div>
     </div>
@@ -47,7 +47,7 @@
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta u-flex u-flex--center-items">
+    <section class="dozmia-cta u-flex u-flex--center-items js-smart-scroll-object">
       <div>
         <h4>Thanks for registering early. We'll email you when its ready!</h4>
         <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
@@ -166,7 +166,7 @@
     </section>
   </template>
   <template id="home-sign-up-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta">
+    <section class="dozmia-cta js-smart-scroll-object">
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
