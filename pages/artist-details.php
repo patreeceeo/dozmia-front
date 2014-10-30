@@ -5,13 +5,15 @@
   </header>
   <ol>
     <li class="dozmia-album-list-item">
-      <menu class="u-pull-right">
-        <button class="dozmia-button dozmia-button--big-text u-normalize u-gutter">&plus; Collect</button>
-      </menu>
       <h4>Blood Sex Sugar Magik</h4>
       <h5>2006</h5>
       <div class="u-flex">
-        <div class="dozmia-album-art dozmia-album-art--dark u-gutter"></div>
+        <div style="min-width: 215px;">
+          <div class="dozmia-album-art dozmia-album-art--dark u-gutter"></div>
+          <menu class="u-margin-chunky-top">
+            <button class="dozmia-button dozmia-button--big-text u-normalize u-gutter">&plus; Collect</button>
+          </menu>
+        </div>
         <div class="u-gutter">
           <table class="dozmia-album-track-list u-pull-right">
             <thead>
@@ -51,13 +53,15 @@
       </div>
     </li>
     <li class="dozmia-album-list-item">
-      <menu class="u-pull-right">
-        <button class="dozmia-button dozmia-button--big-text u-normalize u-gutter">&plus; Collect</button>
-      </menu>
       <h4>Graceland</h4>
       <h4>1982</h4>
       <div class="u-flex">
-        <div class="dozmia-album-art dozmia-album-art--dark u-gutter"></div>
+        <div style="min-width: 215px;">
+          <div class="dozmia-album-art dozmia-album-art--dark u-gutter"></div>
+          <menu class="u-margin-chunky-top">
+            <button class="dozmia-button dozmia-button--big-text u-normalize u-gutter">&plus; Collect</button>
+          </menu>
+        </div>
         <div class="u-gutter">
           <table class="dozmia-album-track-list u-pull-right">
             <thead>
