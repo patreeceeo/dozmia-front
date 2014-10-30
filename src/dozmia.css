@@ -150,13 +150,13 @@ input:-ms-input-placeholder {
 
 input.dozmia-input {
   height: 36px;
-  border-radius: 36px;
   text-indent: 18px;
   color: rgb(117, 117, 117);
-  background-color: rgb(255, 255, 255);
   font-family: source_sans_pro, Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border-radius: 36px;
   border: 1px solid rgb(165, 165, 165);
 }
 /* search input used on home page */
@@ -187,6 +187,8 @@ select.dozmia-input {
   color: rgb(117, 117, 117);
   padding: 0 10px;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(165, 165, 165);
 }
 input.dozmia-input:focus,
 select.dozmia-input:focus,
