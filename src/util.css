@@ -16,7 +16,7 @@
 
 .u-overflow-scroll {
   overflow-y: scroll !important;
-  overflow-y: hidden !important;
+  overflow-x: hidden !important;
 }
 
 input.u-normalize,
