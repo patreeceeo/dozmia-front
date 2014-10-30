@@ -72,7 +72,7 @@
     </section>
   </template>
   <template id="master-template" type="text/x-handlebars-template">
-    <div class="dozmia-layout-page-content u-flex u-flex--center-items u-flex--center-items-x" style="display:none">
+    <div id="loading-overlay" class="dozmia-layout-page-content u-flex u-flex--center-items u-flex--center-items-x" style="display:none">
       <img src="assets/dozmia-logo.svg">
     </div>
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
