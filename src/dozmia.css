@@ -913,6 +913,7 @@ section.dozmia-playlist .dozmia-playlist-plus:after {
   transition: transform 0.5s;
 }
 .dozmia-transition--player-slide.dozmia-transition-out-end {
+  -webkit-transform: translateY(100px);
   transform: translateY(100px);
 }
 
