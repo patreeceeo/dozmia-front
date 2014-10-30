@@ -1,6 +1,10 @@
 
 # Dozmia Font-End
 
+Note: this does not include the code for the mobile site.
+
+For a demo, see (http://papyrusoft.com/dozmia)[http://papyrusoft.com/dozmia]
+
 ## Project Structure
 
 - assets/ - images, fonts and related files
