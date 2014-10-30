@@ -706,6 +706,9 @@ table.dozmia-song-list tbody tr {
 table.dozmia-song-list tbody tr:first-child {
   border-top: 1px solid rgb(236, 236, 236);
 }
+table.dozmia-song-list tbody tr:hover {
+  background-color: rgb(244, 244, 244);
+}
 /* This seems like it might be inducing a Chrome bug.
 /* The font size of child button changes only when hovering and not when
 /* inspecting the button element in dev tools!
@@ -743,7 +746,7 @@ table.dozmia-album-track-list tr td:nth-child(3) {
 }
 
 .dozmia-list-item.dozmia-list-item--selected {
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(236, 236, 236);
   color: rgb(66, 189, 220);
 }
 
