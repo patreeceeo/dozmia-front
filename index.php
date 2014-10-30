@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="src/util.css">
   <link rel="stylesheet" href="src/dozmia.css">
   <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+  
+  <link rel="icon" href="favicon.gif">
 
   <script type="text/javascript" src="lib/jquery-2.1.1.js"></script>
   <script type="text/javascript" src="lib/underscore.js"></script>
@@ -59,7 +61,7 @@
         <div class="dozmia-complex-input u-margin-chunky-bottom">
           <input class="dozmia-input dozmia-input--big u-normalize" type="search" title="Search Dozmia" placeholder="Type an artist you know to find something new!">
           <div class="dozmia-complex-input-suffix">
-            <button class="dozmia-search-button u-normalize">-></button>
+            <button class="dozmia-search-button u-normalize"></button>
           </div>
         </div>
         <div class="u-margin-chunky-bottom">
@@ -72,18 +74,18 @@
   <template id="master-template" type="text/x-handlebars-template">
     <div class="dozmia-layout-fixed-left dozmia-music-drawer">
       <nav class="dozmia-music-drawer-section">
-        <a href="#"><h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/icon-dozmia-temp.gif"><span>Dozmia</span></h5></a>
+        <a href="#"><h5 class="dozmia-prefix-logo u-flex u-flex--center-items"><img src="/dozmia/assets/dozmia-logo.svg"><span>Dozmia</span></h5></a>
         <h6>Collection</h6>
         <ul>
-          <li class="dozmia-music-drawer-item"><i></i><a href="#collection">Songs</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--collection"><i></i><a href="#collection">Songs</a></li>
         </ul>
       </nav>
       <nav class="dozmia-music-drawer-section">
-        <h6>Playlists</h6>
+        <h6 class="dozmia-playlists">Playlists</h6>
         <ul>
-          <li class="dozmia-music-drawer-item"><a href="#playlist">Rock 'n Roll</a></li>
-          <li class="dozmia-music-drawer-item"><a href="#playlist-empty">Everything</a></li>
-          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--selected"><a href="#playlist-empty">Electronica</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--playlist"><a href="#playlist">Rock 'n Roll</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--playlist"><a href="#playlist-empty">Everything</a></li>
+          <li class="dozmia-music-drawer-item dozmia-music-drawer-item--playlist dozmia-music-drawer-item--selected"><a href="#playlist-empty">Electronica</a></li>
         </ul>
       </nav>
     </div>

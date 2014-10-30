@@ -145,7 +145,8 @@ input[type="search"].dozmia-input.dozmia-input--big {
   font-size: 17px;
   height: 60px;
   width: 100%;
-  text-indent: 30px;
+  text-indent: 45px;
+  background-image: none;
 }
 input[type="search"].dozmia-input {
   font-family: montserrat, Arial, Helvetica, sans-serif;
@@ -153,6 +154,10 @@ input[type="search"].dozmia-input {
   font-style: italic;
   font-weight: normal;
   border: 2px solid rgb(165, 165, 165);
+  background-image: url("/dozmia/assets/icon-magnifying-glass.svg");
+  background-position: right 10px top 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
 }
 select.dozmia-input {
   height: 36px;
@@ -230,11 +235,27 @@ a.dozmia-button {
   text-transform: uppercase;
 }
 
+a.dozmia-add-button {
+  font-size: 20px !important;
+  color: transparent;
+  background-image: url("/dozmia/assets/icon-add-dark.svg");
+  background-position: 50%;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+}
+a.dozmia-add-button:after {
+  content: "++";
+}
+
 button.dozmia-search-button {
   width: 50px;
   height: 100%;
   background-color: rgb(255, 255, 255);
   border-left: 1px solid rgb(189, 189, 189);
+  background-image: url("/dozmia/assets/icon-play.svg");
+  background-position: 50%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
 }
 
 .dozmia-album-art-wall {
@@ -351,6 +372,8 @@ button.dozmia-search-button {
   position: absolute;
   left: 270px;
   right: 140px;
+  height: 100%;
+  margin: 0 30px;
 }
 
 .dozmia-layout-fixed-right {
@@ -456,19 +479,34 @@ button.dozmia-search-button {
   font-size: 13px;
   line-height: 27px;
   display: list-item;
+  padding-left: 20px;
 }
 .dozmia-music-drawer-item a {
   display: block;
   color: inherit;
   text-decoration: none;
+  background-position: 0 50%;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
 }
-.dozmia-music-drawer-item--selected {
+.dozmia-music-drawer-item.dozmia-music-drawer-item--selected {
   background-color: rgb(117, 117, 117);
-  position: relative;
-}
-.dozmia-music-drawer-item.dozmia-music-drawer-item--selected a {
   border-left: 5px solid rgb(66, 189, 220);
+  position: relative;
   padding-left: 15px;
+}
+.dozmia-music-drawer-item.dozmia-music-drawer-item--playlist a {
+  background-image: url("/dozmia/assets/icon-playlist-white.svg");
+}
+.dozmia-music-drawer-item.dozmia-music-drawer-item--collection a {
+  background-image: url("/dozmia/assets/icon-music-note-white.svg");
+}
+
+h6.dozmia-playlists {
+  background-image: url("/dozmia/assets/icon-add-w-circle.svg");
+  background-position: right 20px top 50%;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
 }
 
 .dozmia-top-shelf {
@@ -503,12 +541,14 @@ button.dozmia-search-button {
 
 .dozmia-prefix-logo img {
   margin-right: 5px;
+  height: 32px;
 }
 
 .dozmia-player {
   background-color: rgb(255, 255, 255);
   color: rgb(145, 145, 145);
   border-top: 1px solid rgb(117, 117, 117);
+  height: 100%;
 }
 .dozmia-player--translucent {
   background-color: rgba(255, 255, 255, 0.5);
@@ -522,6 +562,12 @@ button.dozmia-search-button {
 .dozmia-player-song-info h1 {
   font-size: 20px;
   margin: 0;
+  width: auto;
+}
+.dozmia-player .dozmia-album-art {
+  height: 90px;
+  width: 90px;
+  min-width: 90px;
 }
 .dozmia-player-buttons {
   height: 100%;
@@ -530,16 +576,34 @@ button.dozmia-search-button {
 button.dozmia-control-rewind,
 button.dozmia-control-play,
 button.dozmia-control-fastforward {
-  position: relative;
   width: 60px;
   height: 100%;
-  outline: 1px solid rgba(0, 0, 0, 0.2);
+  background-position: 50%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat; 
+}
+button.dozmia-control-rewind {
+  background-image: url("/dozmia/assets/icon-back.svg");
+}
+button.dozmia-control-fastforward {
+  background-image: url("/dozmia/assets/icon-skip.svg");
+}
+button.dozmia-control-play {
+  background-size: 45px 45px;
+  background-image: url("/dozmia/assets/icon-play.svg");
 }
 
 .dozmia-control-volume {
   width: 140px;
-  height: 100px;
-  outline: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
+  justify-content: flex-end;
+  background-position: 0 50%;
+  background-size: 32px 32px;
+  background-repeat: no-repeat; 
+  background-image: url("/dozmia/assets/icon-volume.svg");
+}
+.dozmia-control-volume input {
+  width: 110px;
 }
 
 input[type="range"].dozmia-control-slider {
@@ -688,6 +752,12 @@ section.dozmia-playlist .dozmia-playlist-plus {
   width: 150px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgb(165, 165, 165);
+  color: rgb(165, 165, 165);
+  font-size: 90px;
+  font-weight: bold;
+}
+section.dozmia-playlist .dozmia-playlist-plus:after {
+  content: "+";
 }
 
 .dozmia-grid-list {
@@ -816,4 +886,22 @@ section.dozmia-playlist .dozmia-playlist-plus {
 }
 .dozmia-transition--player-slide.dozmia-transition-out-end {
   transform: translateY(100px);
+}
+
+.dozmia-bg-clock {
+  background-image: url("/dozmia/assets/icon-clock.svg");
+  background-position: 50%;
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
+menu.dozmia-song-actions menuitem {
+  padding-left: 22px;
+  background-position: 0 50%;
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-image: url("/dozmia/assets/icon-playlist-dark.svg");
+}
+menu.dozmia-song-actions menuitem.dozmia-add-action {
+  background-image: url("/dozmia/assets/icon-add-dark.svg");
 }

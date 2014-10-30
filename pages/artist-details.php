@@ -19,20 +19,20 @@
               <td></td>
               <td>Track</td>
               <td></td>
-              <td>[time]</td>
+              <td class="dozmia-bg-clock"></td>
             </thead>
             <tbody>
               <tr class="dozmia-list-item">
                 <td>1</td>
-                <td><button class="u-normalize">[&plus;]</button></td>
+                <td><a class="dozmia-add-button u-normalize"></a></td>
                 <td>Pendulum Swing</td>
                 <td class="js-ellipsis">
                   <menuitem>&#133;</menuitem>
                 </td>
                 <td>4:47</td>
               </tr>
-              <tr class="dozmia-list-item"><td>2</td><td><button class="u-normalize">[&plus;]</button></td><td>Bla Bla</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
-              <tr class="dozmia-list-item dozmia-list-item--selected"><td>3</td><td><button class="u-normalize">[&plus;]</button></td><td>Pendulum Swing 2</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
+              <tr class="dozmia-list-item"><td>2</td><td><a class="dozmia-add-button u-normalize"></a></td><td>Bla Bla</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
+              <tr class="dozmia-list-item dozmia-list-item--selected"><td>3</td><td><a class="dozmia-add-button u-normalize"></a></td><td>Pendulum Swing 2</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
             </tbody>
           </table>
         </div>
@@ -65,20 +65,20 @@
               <td></td>
               <td>Track</td>
               <td></td>
-              <td>[time]</td>
+              <td class="dozmia-bg-clock"></td>
             </thead>
             <tbody>
               <tr class="dozmia-list-item">
                 <td>1</td>
-                <td><button class="u-normalize">[&plus;]</button></td>
+                <td><a class="dozmia-add-button u-normalize"></a></td>
                 <td>Pendulum Swing</td>
                 <td class="js-ellipsis">
                   <menuitem>&#133;</menuitem>
                 </td>
                 <td>4:47</td>
               </tr>
-              <tr class="dozmia-list-item"><td>2</td><td><button class="u-normalize">[&plus;]</button></td><td>Bla Bla</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
-              <tr class="dozmia-list-item dozmia-list-item--selected"><td>3</td><td><button class="u-normalize">[&plus;]</button></td><td>Pendulum Swing 2</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
+              <tr class="dozmia-list-item"><td>2</td><td><a class="dozmia-add-button u-normalize"></a></td><td>Bla Bla</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
+              <tr class="dozmia-list-item dozmia-list-item--selected"><td>3</td><td><a class="dozmia-add-button u-normalize"></a></td><td>Pendulum Swing 2</td><td class="js-ellipsis"><menuitem>&#133;<menuitem></td><td>4:47</td></tr>
             </tbody>
           </table>
         </div>
@@ -86,8 +86,8 @@
       <div class="dozmia-flyout dozmia-flyout--left">
         <div class="dozmia-flyout-arrow"></div>
           <div class="dozmia-flyout-content">
-            <menu>
-              <menuitem>Collect</menuitem>
+            <menu class="dozmia-song-actions">
+              <menuitem class="dozmia-add-action">Collect</menuitem>
               <menuitem>Rock 'n Roll</menuitem>
               <menuitem>Everything</menuitem>
               <menuitem>Electronica</menuitem>
