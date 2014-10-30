@@ -88,8 +88,10 @@ h3 {
   height: 0px;
   margin: 19px 15px;
   color: rgb(0, 0, 0);
+  flex-wrap: nowrap !important;
 }
 h3 span {
+  text-align: center;
   background-color: inherit;
   padding: 0 10px;
 }
@@ -97,6 +99,12 @@ h3 span:first-child,
 h3 span:last-child {
   border-bottom: 1px solid rgb(165, 165, 165);
   flex-grow: 1;
+}
+h3 span:first-child {
+  padding-left: 0;
+}
+h3 span:last-child {
+  padding-right: 0;
 }
 
 h4 {
@@ -421,8 +429,8 @@ button.dozmia-search-button {
   left: 50%;
   margin-left: -175px;
   margin-top: -250px;
-  width: 400px;
-  min-height: 300px;
+  width: 450px;
+  padding: 15px;
 }
 .dozmia-cta--wide {
   left: 50%;

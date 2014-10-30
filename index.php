@@ -21,9 +21,10 @@
 
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-thanks-view.js"></script> 
-  <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-home-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-player-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
@@ -47,11 +48,9 @@
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta u-flex u-flex--center-items js-smart-scroll-object">
-      <div>
-        <h4>Thanks for registering early. We'll email you when its ready!</h4>
-        <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
-      </div>
+    <section class="dozmia-cta js-smart-scroll-object">
+      <h4>Thanks for registering early. We'll email you when its ready!</h4>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
     </section>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
@@ -66,7 +65,7 @@
         </div>
         <div class="u-margin-chunky-bottom">
           <a class="dozmia-button dozmia-button--big-text u-normalize" href="#signup">Sign Up</a>
-          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#home?modal=login">Login</a>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" href="#login">Login</a>
         </div>
       </menu>
     </section>
@@ -208,6 +207,23 @@
   </template>
   <template id="login-template" type="text/x-handlebars-template">
     <section>
+      <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
+      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>
+      <form>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Username" title="Username" required>
+        </p>
+        <p class="u-flex u-flex--fill-x">
+          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
+        </p>
+        <p class="u-flex u-flex--center-items-x u-margin-chunky-top">
+          <button class="dozmia-button dozmia-button--big-text dozmia-button--hollow u-normalize" title="submit">login</button>
+        </p>
+      </form>
+    </section>
+  </template>
+  <template id="home-login-template" type="text/x-handlebars-template">
+    <section class="dozmia-cta u-text-center js-smart-scroll-object">
       <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>
       <form>

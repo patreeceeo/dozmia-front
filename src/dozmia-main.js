@@ -74,6 +74,7 @@ this.dozmia = {};
       "home": "home",
       "signup": "homeSignUp",
       "thanks": "homeSignUpThanks",
+      "login": "homeLogin",
       ":page(/)": "otherPage"
     },
     home: function () {
@@ -95,6 +96,13 @@ this.dozmia = {};
       dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-view").transitionOut(function () {
         this.assignChild(new dozmia.HomeSignUpThanksView(), "#dozmia-cta-container");
+        this.render();
+      });
+    },
+    homeLogin: function () {
+      dozmia.rman.request("modal-view").$el.hide();
+      dozmia.rman.request("home-view").transitionOut(function () {
+        this.assignChild(new dozmia.HomeLoginView(), "#dozmia-cta-container");
         this.render();
       });
     },
