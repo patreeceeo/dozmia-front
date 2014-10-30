@@ -219,6 +219,9 @@ a.dozmia-button {
   width: auto;
   text-align: center;
 }
+.dozmia-button:hover {
+  background-color: rgb(16, 199, 230);
+}
 .dozmia-button.dozmia-button--hollow {
   background: rgb(255, 255, 255) !important;
   color: rgb(66, 189, 220) !important;
