@@ -129,7 +129,7 @@
         </div>
         <input type="range" class="dozmia-control-slider u-normalize u-parent-width">
       </div>
-      <div class="dozmia-control-volume u-pull-right u-flex u-flex--center-items">
+      <div class="dozmia-control-volume u-pull-right u-flex u-flex--align-right u-flex--center-items">
         <input type="range" class="dozmia-control-slider u-normalize u-inline-block">
       </div>
     </div>

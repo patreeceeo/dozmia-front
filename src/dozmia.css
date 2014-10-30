@@ -599,14 +599,14 @@ button.dozmia-control-play {
 .dozmia-control-volume {
   width: 140px;
   height: 100%;
-  justify-content: flex-end;
   background-position: 0 50%;
   background-size: 32px 32px;
   background-repeat: no-repeat; 
   background-image: url("/dozmia/assets/icon-volume.svg");
 }
 .dozmia-control-volume input {
-  width: 110px;
+  width: 90px;
+  margin: 0 10px !important;
 }
 
 input[type="range"].dozmia-control-slider {

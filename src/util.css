@@ -114,6 +114,12 @@ input[type="range"].u-normalize::-moz-range-thumb {
 .u-flex--fill-x > * {
   flex-grow: 1;
 }
+.u-flex--align-right {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
 
 .u-parent-width {
   display: block;
