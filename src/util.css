@@ -112,6 +112,9 @@ input[type="range"].u-normalize::-moz-range-thumb {
   flex-wrap: wrap;
 }
 .u-flex--fill-x > * {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
   flex-grow: 1;
 }
 .u-flex--align-right {

@@ -88,7 +88,14 @@ h3 {
   height: 0px;
   margin: 19px 15px;
   color: rgb(0, 0, 0);
+  -webkit-flex-wrap: nowrap !important;
+  -moz-flex-wrap: nowrap !important;
+  -ms-flex-wrap: nowrap !important;
   flex-wrap: nowrap !important;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 h3 span {
   text-align: center;
@@ -98,6 +105,9 @@ h3 span {
 h3 span:first-child,
 h3 span:last-child {
   border-bottom: 1px solid rgb(165, 165, 165);
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
   flex-grow: 1;
 }
 h3 span:first-child {
