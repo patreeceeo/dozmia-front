@@ -17,6 +17,7 @@
     },
     showPage: function (pageName) {
       var self = this;
+      this.$("#loading-overlay").show();
       dozmia.u.ajax({
         method: "GET",
         url: "page.php?page="+pageName
@@ -24,6 +25,8 @@
         self.$("#page-container").html(pageContent);
       }).error(function () {
         self.$("#page-container").html("Error: Couldn't fetch content for "+self.pageName);
+      }).done(function () {
+        self.$("#loading-overlay").hide();
       });
     }
   });
