@@ -4,7 +4,7 @@
 ## Project Structure
 
 - assets/ - images, fonts and related files
-- pages/ - PHP scripts generating content for "pages". See [how it works](#how_it_works)
+- pages/ - PHP scripts generating content for "pages". See [how it works](#how-it-works)
 - lib/ - currently just 3rd party or vendor JS scripts
 - src/ - home of the application logic JS scripts
 - index.php - renders the initial HTML layout, fetches JS scripts and other resources
