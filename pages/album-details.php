@@ -3,7 +3,7 @@
     <figure class="dozmia-album-art dozmia-album-art--dark u-pull-left"></figure>
     <h1>Blood Sex Sugar Magik</h1>
     <h4>Chopin</h4>
-    <h4>1831</h4>
+    <h5>1831</h5>
     <menu>
       <button class="dozmia-button dozmia-button--big-text u-normalize">&plus; Collect</button>
     </menu>
