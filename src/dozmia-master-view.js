@@ -25,6 +25,7 @@
           url: "page.php?page="+pageName
         }).success(function (pageContent) {
           self.$("#page-container").html(pageContent);
+          dozmia.overflowScollFix();
         }).error(function () {
           self.$("#page-container").html("Error: Couldn't fetch content for "+self.pageName);
         }).done(function () {

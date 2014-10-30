@@ -169,6 +169,17 @@ this.dozmia = {};
     }
   });
 
+  dozmia.overflowScollFix = function () {
+    // Make `overflow: scroll` work how it ought to.
+    $(".u-overflow-scroll").each(function () {
+      if($(this).children().height() > $(this).height()) {
+        $(this).attr("style", "overflow-y: scroll !important");
+      } else {
+        $(this).attr("style", "overflow-y: hidden !important");
+      }
+    });
+  };
+
   $(function () {
     new dozmia.MainRouter();
 
@@ -182,7 +193,10 @@ this.dozmia = {};
           $("html").css("overflow-y", "hidden");
         }
       });
+
+      dozmia.overflowScollFix();
     });
+
   });
 
 })(this.dozmia, this.Backbone, this.$, this._, this.Handlebars);
