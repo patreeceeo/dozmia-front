@@ -17,17 +17,21 @@
     },
     showPage: function (pageName) {
       var self = this;
-      this.$("#loading-overlay").show();
-      dozmia.u.ajax({
-        method: "GET",
-        url: "page.php?page="+pageName
-      }).success(function (pageContent) {
-        self.$("#page-container").html(pageContent);
-      }).error(function () {
-        self.$("#page-container").html("Error: Couldn't fetch content for "+self.pageName);
-      }).done(function () {
-        self.$("#loading-overlay").hide();
-      });
+      if(this.showingPage !== pageName && pageName != null) {
+        this.render();
+        this.$("#loading-overlay").show();
+        dozmia.u.ajax({
+          method: "GET",
+          url: "page.php?page="+pageName
+        }).success(function (pageContent) {
+          self.$("#page-container").html(pageContent);
+        }).error(function () {
+          self.$("#page-container").html("Error: Couldn't fetch content for "+self.pageName);
+        }).done(function () {
+          self.$("#loading-overlay").hide();
+        });
+      }
+      this.showingPage = pageName;
     }
   });
 

@@ -77,6 +77,7 @@ this.dozmia = {};
       ":page(/)": "otherPage"
     },
     home: function () {
+      dozmia.rman.request("master-view").showPage(null);
       dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-view").transitionOut(function () {
         this.assignChild(new dozmia.SearchSignUpLoginView(), "#dozmia-cta-container");
@@ -121,7 +122,7 @@ this.dozmia = {};
       modalView.render().$el.show();
     },
     otherPage: function (pageName) {
-      dozmia.rman.request("master-view").render().showPage(pageName);
+      dozmia.rman.request("master-view").showPage(pageName);
       dozmia.rman.request("modal-view").$el.hide();
     }
   });
