@@ -223,7 +223,6 @@
       </form>
     </section>
   </template>
-  <a class="u-invisible" href="http://papyrusoft.com/" title="thanks"> Dozmia ~ Thanks for building your front-end with Papyrus. Go forth and conquer! ~ Patrick</a>
 </body>
 </html>
 
