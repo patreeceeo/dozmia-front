@@ -23,6 +23,7 @@
   <script type="text/javascript" src="src/dozmia-home-sign-up-thanks-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
+  <script type="text/javascript" src="src/dozmia-player-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-album-art-wall-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-sign-up-view.js"></script> 
@@ -37,8 +38,10 @@
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
     <div>
-      <div id="dozmia-cta-container" class="dozmia-cta-wrapper dozmia-transition--scale dozmia-transition-in">
+      <div id="dozmia-cta-container" class="dozmia-transition--scale dozmia-transition-in-start dozmia-transition-in">
       </div>
+    </div>
+    <div id="dozmia-player" class="dozmia-layout-fixed-bottom dozmia-transition--player-slide {{#unless playingSong}}dozmia-transition-out-end{{/unless}}">
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
@@ -93,7 +96,19 @@
         <button class="dozmia-button dozmia-button--hollow u-normalize u-pull-left u-gutter-small js-login">LOGIN</button>
       </nav>
     </div>
-    <div class="dozmia-layout-fixed-bottom dozmia-player">
+    <div id="dozmia-player" class="dozmia-layout-fixed-bottom">
+    </div>
+    <!-- TODO use flex layout with page content + advert? -->
+    <div class="dozmia-layout-fixed-right dozmia-advert">
+      <h1>Ahh, no ads?</h1>
+      <p>Aren't you lucky!</p>
+    </div>
+    <div class="dozmia-layout-page-content dozmia-page-content">
+      <div id="page-container" class="u-full-height u-overflow-scroll"></div>
+    </div>
+  </template>
+  <template id="dozmia-player-template" type="text/x-handlebars-template">
+    <div class="dozmia-player u-cf">
       <a href="#" class="dozmia-album-art dozmia-album-art--dark dozmia-album-art--half u-pull-left"></a>
       <menu class="dozmia-player-buttons u-pull-left">
         <button class="dozmia-control-rewind u-normalize u-pull-left"></button>
@@ -112,14 +127,6 @@
       <div class="dozmia-control-volume u-pull-right u-flex u-flex--center-items">
         <input type="range" class="dozmia-control-slider u-normalize u-inline-block">
       </div>
-    </div>
-    <!-- TODO use flex layout with page content + advert? -->
-    <div class="dozmia-layout-fixed-right dozmia-advert">
-      <h1>Ahh, no ads?</h1>
-      <p>Aren't you lucky!</p>
-    </div>
-    <div class="dozmia-layout-page-content dozmia-page-content">
-      <div id="page-container" class="u-full-height u-overflow-scroll"></div>
     </div>
   </template>
   <template id="sign-up-template" type="text/x-handlebars-template">

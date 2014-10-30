@@ -9,8 +9,8 @@
       this.tileWidth = Math.sqrt((this.totalWidth * this.totalHeight) / this.nTiles) / 1.5;
     },
     events: {
-      "click .js-album": function () {
-         
+      "click .js-play-album": function () {
+        dozmia.player.playSong({id: "329334"});
       }
     },
     html: function () {
@@ -42,7 +42,6 @@
       });
     },
     _generateRandomArtMarkup: function () {
-      // var layout = dozmia.u.random(1);
       var layout = 1;
       return dozmia.u.times(this.nTiles, function (index) {
         var size;

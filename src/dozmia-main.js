@@ -29,16 +29,21 @@ this.dozmia = {};
     factory: {
       "home-view": function () {
         return new dozmia.HomeView({
+          playerModel: dozmia.player,
           el: "#dozmia-container",
           children: {
-            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView()
+            "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
+            "#dozmia-player": new dozmia.PlayerView()
           }
         });
       },
       "master-view": function () {
         var view;
         view = new dozmia.MasterView({
-          el: "#dozmia-container"
+          el: "#dozmia-container",
+          children: {
+            "#dozmia-player": new dozmia.PlayerView()
+          }
         });
         return view;
       },
@@ -51,6 +56,16 @@ this.dozmia = {};
       }
     }
   });
+
+  dozmia.player = new (Backbone.Model.extend({
+    defaults: {
+      playingSong: false
+    },
+    playSong: function (songInfo) {
+      this.set("playingSong", songInfo);
+      this.trigger("start", songInfo);
+    }
+  }))();
 
   dozmia.MainRouter = Backbone.Router.extend({
     routes: {
@@ -103,7 +118,7 @@ this.dozmia = {};
         modalView.assignChild(new ContentView(), "#modal-content-container");
       }
 
-      modalView.$el.show();
+      modalView.render().$el.show();
     },
     otherPage: function (pageName) {
       dozmia.rman.request("master-view").render().showPage(pageName);
@@ -112,6 +127,10 @@ this.dozmia = {};
   });
 
   dozmia.BaseView = Backbone.View.extend({
+    _super: function (method) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      return this.constructor.__super__[method].apply(this, args);
+    },
     initialize: function (options) {
       options = options || {};
       this.children = options.children || {}; 
@@ -125,9 +144,15 @@ this.dozmia = {};
       return this;
     },
     html: function () {
-      var source = $("#"+this.template+"-template").html();
-      var template = Handlebars.compile(source);
-      return template();
+      var source, template, data;
+      source = $("#"+this.template+"-template").html();
+      template = Handlebars.compile(source);
+      if(typeof this.templateData == "function") {
+        data = this.templateData();
+      } else {
+        data = this.templateData || {};
+      }
+      return template(data);
     },
     assignChild: function (view, selector) {
       // NOTE: if the app is going to be regularly adding and removing views to the DOM
