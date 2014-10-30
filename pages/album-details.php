@@ -4,9 +4,7 @@
     <h1>Blood Sex Sugar Magik</h1>
     <h4>Chopin</h4>
     <h5>1831</h5>
-    <menu>
-      <button class="dozmia-button dozmia-button--big-text u-normalize">&plus; Collect</button>
-    </menu>
+    <button class="dozmia-button dozmia-button--big-text u-normalize">&plus; Collect</button>
   </header>
   <div class="u-gutter">
     <table class="dozmia-album-track-list">
