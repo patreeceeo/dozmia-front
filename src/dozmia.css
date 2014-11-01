@@ -344,6 +344,10 @@ button.dozmia-search-button {
   height: 100%;
   position: absolute;
   z-index: 1;
+  background-image: url("/dozmia/assets/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80px 80px;
 }
 .dozmia-album-art.dozmia-album-art--half h6 {
   font-size: 14px;
@@ -354,6 +358,10 @@ button.dozmia-search-button {
   line-height: 15px;
   padding: 5px;
 }
+.dozmia-album-art.dozmia-album-art--half button {
+  background-size: 40px 40px;
+}
+
 
 .dozmia-album-list-item {
   margin: 15px 0 15px 0;
