@@ -299,6 +299,7 @@ button.dozmia-search-button {
 .dozmia-album-art-wall {
   background-color: rgb(45, 45, 45);
   overflow: hidden;
+  position: absolute;
 }
 
 .dozmia-album-art {

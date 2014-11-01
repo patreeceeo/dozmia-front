@@ -21,8 +21,9 @@
       $artWall = this.$(".dozmia-album-art-wall");
 
       $artWall
-        .width(this.totalWidth)
-        .height(this.totalHeight);
+        .width(this.totalWidth + this.tileWidth)
+        .height(this.totalHeight)
+        .css("left", -this.tileWidth / 2);
       $(".dozmia-album-art:not(.dozmia-album-art--half)")
         .width(this.tileWidth * 2)
         .height(this.tileWidth * 2);
@@ -31,7 +32,8 @@
         .height(this.tileWidth);
       msnry = new Masonry($artWall[0], {
         columnWidth: this.tileWidth,
-        itemSelector: ".dozmia-album-art"
+        itemSelector: ".dozmia-album-art",
+        containerStyle: null
       });
 
       this.$(".js-album").each(function () {
