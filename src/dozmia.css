@@ -233,7 +233,7 @@ a.dozmia-button {
   background-color: rgb(66, 189, 220);
   color: rgb(255, 255, 255);
   padding: 0 30px 0 30px;
-  font-family: montserrat;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   cursor: pointer;
   font-size: 13px;
   width: auto;
