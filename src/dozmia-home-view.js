@@ -18,6 +18,7 @@
     },
     transitionIn: function () {
       var $el = this.$(".dozmia-transition--scale");
+      $el.addClass("dozmia-transition-in");
       $el.removeClass("dozmia-transition-in-start");
       setTimeout(function () {
         $el.removeClass("dozmia-transition-in");
@@ -26,10 +27,12 @@
     },
     transitionOut: function (callback) {
       var $el, self = this;
-      $el = $(".dozmia-transition--scale")
-        .addClass("dozmia-transition-out");
+      $el = $(".dozmia-transition--scale");
+      $el.addClass("dozmia-transition-out");
       callback && setTimeout(function () {
-        callback.call(self);   
+        $el.removeClass("dozmia-transition-out");
+        $el.addClass("dozmia-transition-in-start");
+        callback.call(self);
       }, 500);
       return this;
     },
