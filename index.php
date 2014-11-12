@@ -24,7 +24,6 @@
   <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-thanks-view.js"></script> 
-  <script type="text/javascript" src="src/dozmia-home-login-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-player-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-modal-view.js"></script> 
@@ -208,23 +207,6 @@
     </section>
   </template>
   <template id="login-template" type="text/x-handlebars-template">
-    <section>
-      <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>
-      <form>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Username" title="Username" required>
-        </p>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
-        </p>
-        <p class="u-flex u-flex--center-items-x u-margin-chunky-top">
-          <button class="dozmia-button dozmia-button--big-text dozmia-button--hollow u-normalize" title="submit">login</button>
-        </p>
-      </form>
-    </section>
-  </template>
-  <template id="home-login-template" type="text/x-handlebars-template">
     <section>
       <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>

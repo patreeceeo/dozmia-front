@@ -118,7 +118,7 @@ this.dozmia = {};
     homeLogin: function () {
       dozmia.rman.request("modal-view").$el.hide();
       dozmia.rman.request("home-view").transitionOut(function () {
-        this.assignChild(new dozmia.HomeLoginView(), "#dozmia-cta-container");
+        this.assignChild(new dozmia.LoginView(), "#dozmia-cta-container");
         this.render();
       });
     },
