@@ -41,20 +41,22 @@
     <div id="dozmia-album-art-wall-container" class="u-full-height u-overflow-hidden"> 
     </div>
     <div class="u-overflow-hidden">
-      <div id="dozmia-cta-container" class="dozmia-transition--scale dozmia-transition-in-start dozmia-transition-in">
+      <div class="dozmia-transition--scale dozmia-transition-in-start dozmia-transition-in">
+        <div id="dozmia-cta-container" class="dozmia-cta {{#if wideVersion}}dozmia-cta--wide{{/if}} js-smart-scroll-object">
+        </div>
       </div>
     </div>
     <div id="dozmia-player" class="dozmia-layout-fixed-bottom dozmia-transition--player-slide {{#unless playingSong}}dozmia-transition-out-end{{/unless}}">
     </div>
   </template>
   <template id="home-sign-up-thanks-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta js-smart-scroll-object">
+    <section>
       <h4>Thanks for registering early. We'll email you when its ready!</h4>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Share with you friends what's coming!</span><span></span></h3> 
     </section>
   </template>
   <template id="search-sign-up-login-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta dozmia-cta--wide">
+    <section>
       <h1 class="u-text-blue">Dozmia</h1>
       <menu class="u-gutter-fat u-text-center">
         <div class="dozmia-complex-input u-margin-chunky-bottom">
@@ -168,7 +170,7 @@
     </section>
   </template>
   <template id="home-sign-up-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta js-smart-scroll-object">
+    <section>
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
@@ -223,7 +225,7 @@
     </section>
   </template>
   <template id="home-login-template" type="text/x-handlebars-template">
-    <section class="dozmia-cta u-text-center js-smart-scroll-object">
+    <section>
       <button class="dozmia-button dozmia-button--facebook"><span></span>Connect</button>
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>OR</span><span></span></h3>
       <form>

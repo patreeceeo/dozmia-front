@@ -452,6 +452,7 @@ button.dozmia-search-button {
   margin-top: -250px;
   width: 450px;
   padding: 15px;
+  text-align: center;
 }
 .dozmia-cta--wide {
   left: 50%;

@@ -20,22 +20,32 @@ this.dozmia = {};
     this.resources = {};
   };
 
-  dozmia.ResourceManager.prototype.request = function (name) {
-    var args = Array.prototype.slice.call(arguments, 1);
-    return this.resources[name] || (this.resources[name] = this.factory[name].apply(this, args)); 
+  dozmia.ResourceManager.prototype.request = function (basename, options) {
+    var name = this._getName(basename, options);
+    if(this.resources[name] == null) {
+      this.resources[name] = this.factory[basename].call(this, options);
+    }
+
+    return this.resources[name];
+  };
+  dozmia.ResourceManager.prototype._getName = function (basename, options) {
+    return basename + JSON.stringify(options);
   };
 
   dozmia.rman = new dozmia.ResourceManager({
     factory: {
-      "home-view": function () {
-        return new dozmia.HomeView({
+      "home-view": function (options) {
+        var defaults;
+        options = options || {};
+        defaults = {
           playerModel: dozmia.player,
           el: "#dozmia-container",
           children: {
             "#dozmia-album-art-wall-container": new dozmia.AlbumArtWallView(),
             "#dozmia-player": new dozmia.PlayerView()
           }
-        });
+        };
+        return new dozmia.HomeView(_.defaults(options, defaults));
       },
       "master-view": function () {
         var view;
@@ -78,9 +88,15 @@ this.dozmia = {};
       ":page(/)": "otherPage"
     },
     home: function () {
+      var options;
       dozmia.rman.request("master-view").showPage(null);
       dozmia.rman.request("modal-view").$el.hide();
-      dozmia.rman.request("home-view").transitionOut(function () {
+      options = {
+        dialogOptions: {
+          wideVersion: true 
+        }
+      };
+      dozmia.rman.request("home-view", options).transitionOut(function () {
         this.assignChild(new dozmia.SearchSignUpLoginView(), "#dozmia-cta-container");
         this.render();
       });

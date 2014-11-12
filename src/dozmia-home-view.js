@@ -1,14 +1,15 @@
-!(function (dozmia) {
+!(function (dozmia, _) {
   "use strict";
   dozmia.HomeView = dozmia.BaseView.extend({
     initialize: function (options) {
       this._super("initialize", options);
       this.playerModel = options.playerModel;
       this.listenTo(this.playerModel, "start", this.showPlayer);
+      this.dialogOptions = options.dialogOptions;
     },
     template: "home",
     templateData: function () {
-       return this.playerModel.toJSON();
+       return _.extend(this.playerModel.toJSON(), this.dialogOptions);
     },
     afterRender: function () {
       var self = this;
@@ -40,4 +41,4 @@
        this.$("#dozmia-player").addClass("dozmia-transition-out-end");
     }
   });
-})(this.dozmia);
+})(this.dozmia, this._);
