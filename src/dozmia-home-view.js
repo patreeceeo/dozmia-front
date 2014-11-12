@@ -9,7 +9,7 @@
     },
     template: "home",
     templateData: function () {
-       return _.extend(this.playerModel.toJSON(), this.dialogOptions);
+      return _.extend(this.playerModel.toJSON(), this.dialogOptions);
     },
     afterRender: function () {
       var self = this;

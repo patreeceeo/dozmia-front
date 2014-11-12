@@ -2,6 +2,13 @@
   "use strict";
 
   dozmia.SignUpView = dozmia.BaseView.extend({
-    template: "sign-up"
+    initialize: function (options) {
+      this._super("initialize"); 
+      this.options = options;
+    },
+    template: "sign-up",
+    templateData: function () {
+      return this.options;
+    }
   });
 })(this.dozmia);

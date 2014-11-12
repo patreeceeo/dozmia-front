@@ -22,7 +22,6 @@
   <script type="text/javascript" src="src/dozmia-main.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-search-sign-up-login-view.js"></script> 
-  <script type="text/javascript" src="src/dozmia-home-sign-up-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-home-sign-up-thanks-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-master-view.js"></script> 
   <script type="text/javascript" src="src/dozmia-player-view.js"></script> 
@@ -136,42 +135,10 @@
   </template>
   <template id="sign-up-template" type="text/x-handlebars-template">
     <section>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
-      <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
-      <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Or with your email</span><span></span></h3>
-      <form>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="First Name" title="First Name" required>
-          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Last Name" title="Last Name" required>
-        </p>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="email" placeholder="Email Address" title="Email Address" required>
-        </p>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="password" placeholder="Password" title="Password" required>
-        </p>
-        <p class="u-flex u-flex--fill-x">
-          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Date of Birth" title="Date of Birth" required>
-          <input class="dozmia-input u-normalize u-gutter-small" type="text" placeholder="Zip Code" title="Zip Code" required>
-        </p>
-        <p class="u-flex u-flex--fill-x">
-          <label for="input-gender">I am:
-            <select class="dozmia-input u-normalize u-gutter-small" id="input-gender" required>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          </label>
-        </p>
-        <p class="u-flex u-flex--fill-x u-margin-chunky-top">
-          <button class="dozmia-button dozmia-button--big-text u-normalize" title="submit">submit</button>
-        </p>
-      </form>
-    </section>
-  </template>
-  <template id="home-sign-up-template" type="text/x-handlebars-template">
-    <section>
+      {{#if showHeader}}
       <h2 class="u-text-center">Introducing <span class="u-text-blue">Dozmia</span></h2>
       <p class="u-text-center">Free Music, Everwhere</p>
+      {{/if}}{{!-- showHeader --}}
       <h3 class="u-flex u-flex--center-items u-flex--center-items-x"><span></span><span>Sign up with</span><span></span></h3>
       <div class="u-text-center">
         <button class="dozmia-button dozmia-button--facebook u-normalize"><span></span>Facebook</button>
@@ -201,7 +168,7 @@
           </label>
         </p>
         <p class="u-flex u-flex--fill-x u-margin-chunky-top u-margin-chunky-bottom">
-          <a class="dozmia-button dozmia-button--big-text u-normalize" title="submit" href="#thanks">submit</a>
+          <a class="dozmia-button dozmia-button--big-text u-normalize" title="submit" href="{{submitHRef}}">submit</a>
         </p>
       </form>
     </section>

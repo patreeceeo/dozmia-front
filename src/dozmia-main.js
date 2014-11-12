@@ -102,9 +102,14 @@ this.dozmia = {};
       });
     },
     homeSignUp: function () {
+      var options;
       dozmia.rman.request("modal-view").$el.hide();
-      dozmia.rman.request("home-view").transitionOut(function () {
-        this.assignChild(new dozmia.HomeSignUpView(), "#dozmia-cta-container");
+      options = {
+        showHeader: true,
+        submitHRef: "#thanks"
+      };
+      dozmia.rman.request("home-view", options).transitionOut(function () {
+        this.assignChild(new dozmia.SignUpView(options), "#dozmia-cta-container");
         this.render();
       });
     },
@@ -123,24 +128,24 @@ this.dozmia = {};
       });
     },
     modalOverlay: function (pageName, modalName) {
-      var ContentView, modalView;
+      var contentView, modalView;
 
       switch(modalName) {
         case "sign-up":
-          ContentView = dozmia.SignUpView;
+          contentView = new dozmia.SignUpView({submitHRef: "#"});
           break;
         case "login":
-          ContentView = dozmia.LoginView;
+          contentView = new dozmia.LoginView();
           break;
       }
 
       dozmia.rman.request("master-view").showPage(pageName);
       modalView = dozmia.rman.request("modal-view").render();
 
-      if(ContentView == null) {
+      if(contentView == null) {
         dozmia.log.error("The requested modal does not exist.");
       } else {
-        modalView.assignChild(new ContentView(), "#modal-content-container");
+        modalView.assignChild(contentView, "#modal-content-container");
       }
 
       modalView.render().$el.show();
