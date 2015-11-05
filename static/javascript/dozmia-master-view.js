@@ -22,7 +22,7 @@
         this.$("#loading-overlay").show();
         dozmia.u.ajax({
           method: "GET",
-          url: "page.php?page="+pageName
+          url: "static/html/"+pageName+".html"
         }).success(function (pageContent) {
           self.$("#page-container").html(pageContent);
           dozmia.overflowScollFix();

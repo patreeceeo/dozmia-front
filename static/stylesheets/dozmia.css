@@ -184,7 +184,7 @@ input[type="search"].dozmia-input {
   font-style: italic;
   font-weight: normal;
   border: 2px solid rgb(165, 165, 165);
-  background-image: url("/dozmia/assets/icon-magnifying-glass.svg");
+  background-image: url("/static/assets/icon-magnifying-glass.svg");
   background-position: right 10px top 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -276,7 +276,7 @@ a.dozmia-button {
 a.dozmia-add-button {
   font-size: 20px !important;
   color: transparent;
-  background-image: url("/dozmia/assets/icon-add-dark.svg");
+  background-image: url("/static/assets/icon-add-dark.svg");
   background-position: 50%;
   background-size: 14px 14px;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ button.dozmia-search-button {
   height: 100%;
   background-color: rgb(255, 255, 255);
   border-left: 1px solid rgb(189, 189, 189);
-  background-image: url("/dozmia/assets/icon-play.svg");
+  background-image: url("/static/assets/icon-play.svg");
   background-position: 50%;
   background-size: 30px 30px;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ button.dozmia-search-button {
   height: 100%;
   position: absolute;
   z-index: 1;
-  background-image: url("/dozmia/assets/icon-play.svg");
+  background-image: url("/static/assets/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 80px 80px;
@@ -537,14 +537,14 @@ button.dozmia-search-button {
   padding-left: 15px;
 }
 .dozmia-music-drawer-item.dozmia-music-drawer-item--playlist a {
-  background-image: url("/dozmia/assets/icon-playlist-white.svg");
+  background-image: url("/static/assets/icon-playlist-white.svg");
 }
 .dozmia-music-drawer-item.dozmia-music-drawer-item--collection a {
-  background-image: url("/dozmia/assets/icon-music-note-white.svg");
+  background-image: url("/static/assets/icon-music-note-white.svg");
 }
 
 h6.dozmia-playlists {
-  background-image: url("/dozmia/assets/icon-add-w-circle.svg");
+  background-image: url("/static/assets/icon-add-w-circle.svg");
   background-position: right 20px top 50%;
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -624,14 +624,14 @@ button.dozmia-control-fastforward {
   background-repeat: no-repeat; 
 }
 button.dozmia-control-rewind {
-  background-image: url("/dozmia/assets/icon-back.svg");
+  background-image: url("/static/assets/icon-back.svg");
 }
 button.dozmia-control-fastforward {
-  background-image: url("/dozmia/assets/icon-skip.svg");
+  background-image: url("/static/assets/icon-skip.svg");
 }
 button.dozmia-control-play {
   background-size: 45px 45px;
-  background-image: url("/dozmia/assets/icon-play.svg");
+  background-image: url("/static/assets/icon-play.svg");
 }
 
 .dozmia-control-volume {
@@ -640,7 +640,7 @@ button.dozmia-control-play {
   background-position: 0 50%;
   background-size: 32px 32px;
   background-repeat: no-repeat; 
-  background-image: url("/dozmia/assets/icon-volume.svg");
+  background-image: url("/static/assets/icon-volume.svg");
 }
 .dozmia-control-volume input {
   width: 90px;
@@ -651,7 +651,7 @@ input[type="range"].dozmia-control-slider {
   background-color: rgba(82, 194, 223, 0.5);
   height: 7px;
   border-radius: 7px;
-  background-image: url("/dozmia/assets/bg-control-slider.gif");
+  background-image: url("/static/assets/bg-control-slider.gif");
   background-position: 0 0;
   background-size: 64%;
   background-repeat: no-repeat;
@@ -938,7 +938,7 @@ section.dozmia-playlist .dozmia-playlist-plus:after {
 }
 
 .dozmia-bg-clock {
-  background-image: url("/dozmia/assets/icon-clock.svg");
+  background-image: url("/static/assets/icon-clock.svg");
   background-position: 50%;
   background-size: 24px;
   background-repeat: no-repeat;
@@ -949,8 +949,8 @@ menu.dozmia-song-actions menuitem {
   background-position: 0 50%;
   background-size: 13px;
   background-repeat: no-repeat;
-  background-image: url("/dozmia/assets/icon-playlist-dark.svg");
+  background-image: url("/static/assets/icon-playlist-dark.svg");
 }
 menu.dozmia-song-actions menuitem.dozmia-add-action {
-  background-image: url("/dozmia/assets/icon-add-dark.svg");
+  background-image: url("/static/assets/icon-add-dark.svg");
 }
